@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Маша Комова](https://up.htmlacademy.ru/adaptive/19/user/1220851).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Бренева](https://htmlacademy.ru/profile/id169920).
 
 ---
 

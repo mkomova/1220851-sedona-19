@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header class= "page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="">HTML Academy</a></li>
+      </ul>
+      <img class="site-list__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="City of Sedona">
+    </div>
+  </nav>
+  <section class="index-welcome">
+    <h3 class="index-welcome__title">Welcome</h3>
+    <p class="index-welcome__lead">to the gorgeous</p>
+    <h2 class="index-welcome__title-sedona">Sedona</h2>
+    <p class="index-welcome__quote">"Because the Grand Canyon sucks!"</p>
+  </section>
+</header>
+<main class="page-main">
+  <h4 class="page-main__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h4>
+  <p class="page-main__reasons-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  <div class="page-main__first-wrapper">
+    <h4 class="first-wrapper__title-city">Настоящий городок</h4>
+    <p class="first-wrapper__city-paragraph">-№1-</p>
+    <p class="first-wrapper__city-paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+  </div>
+  <img class="page-main__hotel-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Hotel of Sedona">
+  <ul class="page-main__about index-about">
+    <li class="index-about__item">
+      <h4 class="item__heading">Жилье</h4>
+      <p class="item__lead-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    </li>
+    <li class="index-about__item">
+      <h4 class="item__heading">Сувениры</h4>
+      <p class="item__lead-paragraph">Не только китайского, но и местного производства!</p>
+    </li>
+    <li class="index-about__item">
+      <h4 class="item__heading">Еда</h4>
+      <p class="item__lead-paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+    </li>
+  </ul>
+  <div class="page-main__second-wrapper">
+    <h4 class="second-wrapper__title-city">Там есть мост дьявола</h4>
+    <p class="second-wrapper__city-paragraph">-№2-</p>
+    <p class="second-wrapper__city-paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+  </div>
+  <img class="page-main__canyon-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Canyon of Sedona">
+  <section class="page-main__other-wrapper">
+    <div class="other-wrapper__advantages">
+      <h4 class="advantages__title-advantages">Небольшая площадь</h4>
+      <p class="advantages__advantages-paragraph">-№3-</p>
+      <p class="advantages__advantages-paragraph">Все интересные места находятся очень близко</p>
+    </div>
+    <div class="other-wrapper__advantages">
+      <h4 class="advantages__title-advantages">Красивая дорога</h4>
+      <p class="advantages__advantages-paragraph">-№4-</p>
+      <p class="advantages__advantages-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    </div>
+    <div class="other-wrapper__advantages">
+      <h4 class="advantages__title-advantages">Мало туристов</h4>
+      <p class="advantages__advantages-paragraph">-№5-</p>
+      <p class="advantages__advantages-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+    </div>
+  </section>
+  <section class="page-main__map">
+    <h3 class="map__map-title">Заинтересовались?</h3>
+    <p class="map__map-paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <a class="map__find-button" href="">Найти гостиницу</a>
+    <a class="map__map-link" href="">
+      <img class="map__map-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Map of Sedona">
+    </a>
+  </section>
+</main>
+<footer class="page-footer">
+  <p class="page-footer__tag">#VisitSedona</p>
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+    </ul>
+  </div>
+  <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+</footer>
+</body>
 </html>

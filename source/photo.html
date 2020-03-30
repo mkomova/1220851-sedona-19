@@ -10,70 +10,68 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="">Фото и видео</a></li>
+          <li class="site-list__item"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="">HTML Academy</a></li>
         </ul>
-        <img class="site-list__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="City of Sedona">
       </div>
+      <img class="main-nav__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="City of Sedona">
     </nav>
-    <section class="form-welcome">
-      <h2 class="form-welcome__title-sedona">Sedona</h2>
+    <section class="page-header__welcome">
+      <img class="page-header__big-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Welcome to the gorgeous Sedona">
     </section>
   </header>
-  <main class="photo-main">
-    <h4 class="photo-main__main-title">Фото и видео</h4>
-    <p class="photo-main__reasons-paragraph">
+  <main class="page-main">
+    <h2 class="page-main__title">Фото и видео</h2>
+    <p class="page-main__paragraph">
       Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
     </p>
-    <div class="photo-main__gallery">
-      <img class="gallery__road-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Road of Sedona">
-      <h5 class="gallery__gallery-title">Неродные просторы</h5>
-      <p class="gallery__gallery-copyright">Автор фото: Борис</p>
-      <b class="gallery__gallery-likes">1350</b>
-    </div>
-    <div class="photo-main__gallery">
-      <img class="gallery__flora-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Flora of Sedona">
-      <h5 class="gallery__gallery-title">Местная растительность</h5>
-      <p class="gallery__gallery-copyright">Автор фото: Сергей</p>
-      <b class="gallery__gallery-likes">143</b>
-    </div>
-    <div class="photo-main__gallery">
-      <img class="gallery__north-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Road to north of Sedona">
-      <h5 class="gallery__gallery-title">Дорога на север</h5>
-      <p class="gallery__gallery-copyright">Автор фото: Петр</p>
-      <b class="gallery__gallery-likes">96</b>
-    </div>
-    <div class="photo-main__gallery">
-      <img class="gallery__bridge-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Devil's bridge of Sedona">
-      <h5 class="gallery__gallery-title">Мост Дьявола</h5>
-      <p class="gallery__gallery-copyright">Автор фото: Антон</p>
-      <b class="gallery__gallery-likes">254</b>
-    </div>
-    <div class="photo-main__video">
-      <h4 class="video__main-title">Все еще сомневаетесь?</h4>
-      <p class="video__reasons-paragraph">
-        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-      </p>
-      <img class="video__video-preview" src="https://via.placeholder.com/150x150" width="150" height="150" alt="preview video of Sedona">
-    </div>
+    <section class="gallery">
+      <div class="gallery__block">
+        <img class="gallery__img gallery__img--road" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Road of Sedona">
+        <h5 class="gallery__title">Неродные просторы</h5>
+        <p class="gallery__copyright">Автор фото: Борис</p>
+        <b class="gallery__likes">1350</b>
+      </div>
+      <div class="gallery__block">
+        <img class="gallery__img gallery__img--flora" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Flora of Sedona">
+        <h5 class="gallery__title">Местная растительность</h5>
+        <p class="gallery__copyright">Автор фото: Сергей</p>
+        <b class="gallery__likes">143</b>
+      </div>
+      <div class="gallery__block">
+        <img class="gallery__img gallery__img--north" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Road to north of Sedona">
+        <h5 class="gallery__title">Дорога на север</h5>
+        <p class="gallery__copyright">Автор фото: Петр</p>
+        <b class="gallery__likes">96</b>
+      </div>
+      <div class="gallery__block">
+        <img class="gallery__img gallery__img--bridge" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Devil's bridge of Sedona">
+        <h5 class="gallery__title">Мост Дьявола</h5>
+        <p class="gallery__copyright">Автор фото: Антон</p>
+        <b class="gallery__likes">254</b>
+      </div>
+    </section>
+    <h4 class="page-main__title">Все еще сомневаетесь?</h4>
+    <p class="page-main__paragraph">
+      Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+    </p>
+    <img class="page-main__video-preview" src="https://via.placeholder.com/150x150" width="150" height="150" alt="preview video of Sedona">
   </main>
   <footer class="page-footer">
     <p class="page-footer__tag">#VisitSedona</p>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="page-footer social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+    </ul>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
   </footer>
 </body>

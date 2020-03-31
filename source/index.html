@@ -25,51 +25,55 @@
   <main class="page-main">
     <h2 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-main__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <section class="city">
-      <div class="city__blue-wrapper">
-        <h4 class="city__title">Настоящий городок</h4>
-        <p class="city__paragraph">-№1-</p>
-        <p class="city__paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        <img class="city__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Hotel of Sedona">
-      </div>
-      <ul class="city__about">
-        <li class="city__item city__item--housing">
-          <h4 class="city__title">Жилье</h4>
-          <p class="city__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="city__item city__item--souvenirs">
-          <h4 class="city__title">Сувениры</h4>
-          <p class="city__paragraph">Не только китайского, но и местного производства!</p>
-        </li>
-        <li class="city__item city__item--food">
-          <h4 class="city__title">Еда</h4>
-          <p class="city__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-      </ul>
-      <div class="city__blue-wrapper">
-        <h4 class="city__title">Там есть мост дьявола</h4>
-        <p class="city__paragraph">-№2-</p>
-        <p class="city__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        <img class="city__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Canyon of Sedona">
-      </div>
-    </section>
-    <section class="grey-wrapper">
-      <div class="grey-wrapper__advantages">
-        <h4 class="grey-wrapper__title">Небольшая площадь</h4>
-        <p class="grey-wrapper__paragrap">-№3-</p>
-        <p class="grey-wrapper__paragraph">Все интересные места находятся очень близко</p>
-      </div>
-      <div class="grey-wrapper__advantages">
-        <h4 class="grey-wrapper__title">Красивая дорога</h4>
-        <p class="grey-wrapper__paragraph">-№4-</p>
-        <p class="grey-wrapper__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <div class="grey-wrapper__advantages">
-        <h4 class="grey-wrapper__title">Мало туристов</h4>
-        <p class="grey-wrapper__paragraph">-№5-</p>
-        <p class="grey-wrapper__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
-      </div>
-    </section>
+    <article class="feature">
+      <section class="main-reasons">
+        <div class="main-reasons__wrapper">
+          <h4 class="main-reasons__title">Настоящий городок</h4>
+          <p class="main-reasons__paragraph">-№1-</p>
+          <p class="main-reasons__paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img class="main-reasons__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Hotel of Sedona">
+        <ul class="main-reasons__list about">
+          <li class="about__item about__item--housing">
+            <h4 class="about__title">Жилье</h4>
+            <p class="about__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="about__item about__item--souvenirs">
+            <h4 class="about__title">Сувениры</h4>
+            <p class="about__paragraph">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="about__item about__item--food">
+            <h4 class="about__title">Еда</h4>
+            <p class="about__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-reasons">
+        <div class="main-reasons__wrapper">
+          <h4 class="main-reasons__title">Там есть мост дьявола</h4>
+          <p class="main-reasons__paragraph">-№2-</p>
+          <p class="main-reasons__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img class="main-reasons__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Canyon of Sedona">
+      </section>
+      <section class="reasons">
+        <div class="reasons__wrapper">
+          <h4 class="reasons__title">Небольшая площадь</h4>
+          <p class="reasons__paragrap">-№3-</p>
+          <p class="reasons__paragraph">Все интересные места находятся очень близко</p>
+        </div>
+        <div class="reasons__wrapper">
+          <h4 class="reasons__title">Красивая дорога</h4>
+          <p class="reasons__paragraph">-№4-</p>
+          <p class="reasons__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="reasons__wrapper">
+          <h4 class="reasons__title">Мало туристов</h4>
+          <p class="reasons__paragraph">-№5-</p>
+          <p class="reasons__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </section>
+    </article>
     <section class="map">
       <h3 class="map__title">Заинтересовались?</h3>
       <p class="map__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -81,7 +85,7 @@
   </main>
   <footer class="page-footer">
     <p class="page-footer__tag">#VisitSedona</p>
-    <ul class="page-footer social">
+    <ul class="page-footer__socials social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
       </li>

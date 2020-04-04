@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class= "page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__close" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="">Форма отзыва</a></li>
           <li class="site-list__item"><a href="">HTML Academy</a></li>
         </ul>
       </div>
@@ -98,7 +101,7 @@
         </div>
         <div class="inquirer__profile">
           <h4 class="inquirer__title">Опишите свои эмоции:</h4>
-          <textarea class="inquirer__textarea" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="inquirer__textarea" rows="10" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
       </form>
       <button class="inquirer__send-button" type="submit">Отправить отзыв</button>

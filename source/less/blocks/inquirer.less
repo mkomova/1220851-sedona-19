@@ -14,9 +14,12 @@
 }
 
 .inquirer__input {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 20px 22px;
   background-color: @input-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
 }
 
 .inquirer__button {
@@ -25,7 +28,7 @@
 
 .control-text {
   .bold-title;
-  color: #000000;
+  color: @font-black;
   text-transform: none;
 }
 
@@ -47,6 +50,11 @@
 
 .inquirer__send-button {
   .bold-phrase;
-  .buttons;
-  padding: 21px 48px 21px 47px;
+  .button;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
 }

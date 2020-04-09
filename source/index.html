@@ -2,39 +2,39 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class= "page-header">
+  <header class= "page-header container">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__main" href="">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__photo" href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a class="site-list__form" href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__academy" href="">HTML Academy</a></li>
+          <li class="site-list__item"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </div>
-      <img class="main-nav__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="City of Sedona">
     </nav>
-    <section class="page-header__welcome">
-      <img class="page-header__big-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Welcome to the gorgeous Sedona">
-    </section>
+    <div class="page-header__welcome page-header__welcome--index">
+      <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
+    </div>
   </header>
-  <main class="page-main">
+  <main class="page-main container">
     <h2 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-main__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <article class="features">
-      <section class="main-reasons">
-        <div class="main-reasons__wrapper">
-          <h4 class="main-reasons__title">Настоящий городок</h4>
-          <p class="main-reasons__paragraph">-№1-</p>
-          <p class="main-reasons__paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      <section class="reasons">
+        <div class="reasons__wrapper reasons__wrapper--main">
+          <h4 class="reasons__title">Настоящий городок</h4>
+          <p class="reasons__paragraph">-№1-</p>
+          <p class="reasons__paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="main-reasons__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Hotel of Sedona">
+        <img class="reasons__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Hotel of Sedona">
       </section>
       <ul class="features__list about">
         <li class="about__item about__item--housing">
@@ -50,42 +50,42 @@
           <p class="about__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
       </ul>
-      <section class="main-reasons">
-        <div class="main-reasons__wrapper">
-          <h4 class="main-reasons__title">Там есть мост дьявола</h4>
-          <p class="main-reasons__paragraph">-№2-</p>
-          <p class="main-reasons__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <section class="reasons">
+        <div class="reasons__wrapper reasons__wrapper--main">
+          <h4 class="reasons__title">Там есть мост дьявола</h4>
+          <p class="reasons__paragraph">-№2-</p>
+          <p class="reasons__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="main-reasons__medium-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Canyon of Sedona">
+        <img class="reasons__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Canyon of Sedona">
       </section>
       <section class="reasons">
-        <div class="reasons__wrapper">
+        <div class="reasons__wrapper reasons__wrapper--secondary">
           <h4 class="reasons__title">Небольшая площадь</h4>
-          <p class="reasons__paragraph">-№3-</p>
-          <p class="reasons__paragraph">Все интересные места находятся очень близко</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">-№3-</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">Все интересные места находятся очень близко</p>
         </div>
-        <div class="reasons__wrapper">
+        <div class="reasons__wrapper reasons__wrapper--secondary">
           <h4 class="reasons__title">Красивая дорога</h4>
-          <p class="reasons__paragraph">-№4-</p>
-          <p class="reasons__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">-№4-</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="reasons__wrapper">
+        <div class="reasons__wrapper reasons__wrapper--secondary">
           <h4 class="reasons__title">Мало туристов</h4>
-          <p class="reasons__paragraph">-№5-</p>
-          <p class="reasons__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">-№5-</p>
+          <p class="reasons__paragraph reasons__paragraph--secondary">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </section>
     </article>
     <section class="map">
       <h3 class="map__title">Заинтересовались?</h3>
       <p class="map__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="map__find-button" href="">Найти гостиницу</a>
+      <a class="map__find-button button" href="">Найти гостиницу</a>
       <a class="map__link" href="">
         <img class="map__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Map of Sedona">
       </a>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <p class="page-footer__tag">#VisitSedona</p>
     <ul class="page-footer__social social">
       <li class="social__item">

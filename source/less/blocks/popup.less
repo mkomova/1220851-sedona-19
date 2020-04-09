@@ -1,3 +1,10 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .popup__title {
   .bold-title;
 }
@@ -8,14 +15,16 @@
 }
 
 .popup__button {
-  .bold-title;
-  .buttons;
-
-  &--ok {
-   padding: 22px 79px 22px 78px;
- }
+  margin: auto;
 
   &--close {
-   padding: 22px 77px 22px 75px;
- }
+    width: 100%;
+  }
+}
+
+.popup__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: @wrapper-grey;
+  padding: 20px;
 }

@@ -1,24 +1,22 @@
-.site-list {
-
-}
-
 .site-list__item a {
   color: @font-white;
   background-color: @bg-blue;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
-.site-list__main {
- padding: 21px 124px 20px 123px;
-}
+  &:hover {
+    background-color: @bg-hover-blue;
+  }
 
-.site-list__photo {
-padding: 21px 98px 18px 96px;
-}
+  &:active {
+    background-color: @bg-active-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-.site-list__form {
-padding: 21px 93px 20px 92px;
-}
-
-.site-list__academy {
-padding: 21px 96px 20px;
+  &:disabled {
+    background-color: @bg-disabled;
+  }
 }

@@ -1,11 +1,11 @@
 body {
-  min-width: 320px;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: #000000;
+  color: @font-black;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -17,4 +17,31 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
 }

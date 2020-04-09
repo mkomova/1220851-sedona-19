@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -9,24 +11,22 @@
   <header class= "page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__main" href="">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__photo" href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a class="site-list__form" href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__academy" href="">HTML Academy</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </div>
-      <img class="main-nav__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="City of Sedona">
     </nav>
-    <section class="page-header__welcome">
-      <img class="page-header__big-img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Welcome to the gorgeous Sedona">
-    </section>
+    <div class="page-header__welcome">
+      <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
+    </div>
   </header>
-  <main class="page-main">
+  <main class="page-main container">
     <h2 class="page-main__title">Фото и видео</h2>
-    <p class="page-main__paragraph">
+    <p class="page-main__paragraph page-main__paragraph--inner">
       Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
     </p>
     <section class="gallery">
@@ -56,12 +56,12 @@
       </div>
     </section>
     <h4 class="page-main__title">Все еще сомневаетесь?</h4>
-    <p class="page-main__paragraph">
+    <p class="page-main__paragraph page-main__paragraph--inner">
       Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
     </p>
     <img class="page-main__video-preview" src="https://via.placeholder.com/150x150" width="150" height="150" alt="preview video of Sedona">
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <p class="page-footer__tag">#VisitSedona</p>
     <ul class="page-footer__social social">
       <li class="social__item">

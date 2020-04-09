@@ -1,8 +1,19 @@
 .reasons {
-  background-color: @bg-grey;
-  padding-top: 33px;
-  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+}
+
+.reasons__wrapper {
+  &--main {
+    color: @font-white;
+    background-color: @bg-blue;
+  }
+
+  &--secondary {
+    background-color: @bg-grey;
+  }
 }
 
 .reasons__title {
@@ -11,5 +22,12 @@
 
 .reasons__paragraph {
   .small-paragraph;
-  color: @font-grey;
+
+  &--secondary {
+    color: @font-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  align-items: center;
 }

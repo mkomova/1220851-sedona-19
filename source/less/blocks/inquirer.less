@@ -1,10 +1,23 @@
+.inquirer__profile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
 .inquirer__title {
   .bold-title;
+  text-align: center;
+}
+
+.inquirer__label-input {
+  display: flex;
+  margin: 10px 0;
 }
 
 .inquirer__label {
   .big-paragraph;
   color: @font-grey;
+  margin-right: 14px;
 }
 
 .inquirer__input::placeholder {
@@ -15,11 +28,15 @@
 
 .inquirer__input {
   .bold-title;
-  padding: 20px 22px;
+  padding: 0 22px;
+  height: 58px;
+  box-sizing: border-box;
   background-color: @input-color;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border: none;
 }
 
 .inquirer__button {
@@ -46,6 +63,8 @@
   background-color: @input-color;
   padding-top: 22px;
   padding-left: 21px;
+  border: none;
+  margin-bottom: 51px;
 }
 
 .inquirer__send-button {

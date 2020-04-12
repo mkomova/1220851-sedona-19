@@ -1,5 +1,9 @@
 .page-footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .page-footer__tag {
@@ -10,8 +14,47 @@
   .big-paragraph;
   text-decoration: none;
   color: #000000;
+  position: relative;
+  margin-right: 30px;
+}
+
+.page-footer__academy {
+  position: absolute;
+  top: 145px;
+  right: 100px;
+
+  &:hover {
+    fill: @bg-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .page-footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .page-footer__academy {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+  }
 }

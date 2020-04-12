@@ -1,3 +1,8 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__title {
   .bold-title;
   text-align: center;
@@ -10,5 +15,34 @@
 
   &--inner {
     .paragraph;
+  }
+}
+
+.page-main__video-preview {
+  display: flex;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__wrapper {
+    margin: 0 139px 55px;
+
+    &--photo {
+      margin: 0 170px 75px;
+    }
+  }
+
+  .page-main__title {
+    .bold-phrase;
+
+    &--photo {
+      font-size: 30px;
+      line-height: 26px;
+      font-weight: bold;
+    }
+  }
+
+  .page-main__video-preview {
+    margin-bottom: 40px;
   }
 }

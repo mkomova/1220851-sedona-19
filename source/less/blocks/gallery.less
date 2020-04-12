@@ -11,3 +11,62 @@
 .gallery__likes {
   .bold-paragraph;
 }
+
+.gallery__img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+
+  .gallery {
+   margin: 0 60px;
+  }
+
+  .gallery__block {
+  display: flex;
+  flex-direction: column;
+}
+
+  .gallery__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @wrapper-grey;
+    padding: 0 20px;
+    max-height: 80px;
+  }
+
+  .gallery__title-copyright {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__title {
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
+
+  .gallery__copyright {
+    margin-top: 0;
+  }
+
+  .gallery__likes {
+    display: flex;
+    align-items: center;
+  }
+
+  .gallery__big-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 68px;
+  }
+
+  .gallery__img {
+    margin: 0;
+    padding: 0;
+  }
+}

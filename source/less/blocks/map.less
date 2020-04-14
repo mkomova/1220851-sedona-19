@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.map__title-paragraph {
+  margin: 33px 30px;
+}
+
 .map__title {
   .bold-phrase;
 }
@@ -14,10 +18,10 @@
 .map__find-button {
   padding: 17px 0 19px 0;
   width: 100%;
+  margin-bottom: 49px;
 }
 
 @media (min-width: @tablet-width) {
-
   .map {
     display: flex;
     flex-direction: column;
@@ -25,7 +29,7 @@
     align-items: center;
   }
 
-  .map__title-paragraph{
+  .map__title-paragraph {
     margin: 57px 167px 47px;
   }
 
@@ -41,6 +45,13 @@
 
   .map__img {
     width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__img {
+    width: 1200px;
     height: 350px;
   }
 }

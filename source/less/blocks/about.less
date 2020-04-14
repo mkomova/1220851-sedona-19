@@ -22,8 +22,7 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
-    margin-top: 164px;
-    margin-bottom: 66px;
+    margin: 164px auto 66px;
   }
 
   .about__item {
@@ -47,5 +46,21 @@
 
   .about-title {
     .bold-phrase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item {
+    &--housing {
+      margin-right: 134px;
+    }
+
+    &--souvenirs {
+      margin-right: 93px;
+    }
+
+    &--food {
+      margin-right: 151px;
+    }
   }
 }

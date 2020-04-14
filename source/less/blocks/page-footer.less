@@ -11,10 +11,10 @@
 }
 
 .page-footer__copyright {
+  position: relative;
   .big-paragraph;
   text-decoration: none;
   color: #000000;
-  position: relative;
   margin-right: 30px;
 }
 
@@ -37,7 +37,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .page-footer {
     display: flex;
     flex-direction: row;
@@ -56,5 +55,13 @@
     position: absolute;
     top: 25px;
     right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__academy {
+    position: absolute;
+    top: 25px;
+    right: 130px;
   }
 }

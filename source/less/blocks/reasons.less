@@ -7,12 +7,14 @@
 
 .reasons__wrapper {
   &--main {
+    box-sizing: border-box;
     color: @font-white;
     background-color: @bg-blue;
     padding: 61px 27px 45px;
   }
 
   &--secondary {
+    box-sizing: border-box;
     background-color: @bg-grey;
     padding: 33px 41px;
   }
@@ -52,7 +54,7 @@
       align-items: center;
       justify-content: center;
       width: 256px;
-      padding: 0 60px;
+      padding: 0 50px;
     }
 
     &--secondary {
@@ -81,16 +83,19 @@
       box-sizing: border-box;
       width: 400px;
       height: 256px;
+      padding: 0 60px;
     }
 
     &--secondary {
-      padding: 35px 130px;
+      box-sizing: border-box;
+      padding: 50px 85px 70px;
     }
   }
 
   .reasons__img {
     width: 800px;
     height: 256px;
+    margin: 0;
   }
 
   .reasons__title {

@@ -20,8 +20,8 @@
 
 .page-footer__academy {
   position: absolute;
-  top: 145px;
-  right: 100px;
+  top: -5px;
+  right: -35px;
 
   &:hover {
     fill: @bg-blue;
@@ -50,18 +50,10 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
-
-  .page-footer__academy {
-    position: absolute;
-    top: 25px;
-    right: 60px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__academy {
-    position: absolute;
-    top: 25px;
-    right: 130px;
+  .page-footer {
+    justify-content: space-between;
   }
 }

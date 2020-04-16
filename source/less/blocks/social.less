@@ -1,3 +1,50 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
 .social__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 42px;
+  height: 48px;
+  margin-right: 6px;
   background-color: @bg-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: @bg-hover-blue;
+  }
+
+  &:active {
+    background-color: @bg-active-blue;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  fill: @icon-color;
+
+  &--twitter {
+    top: 17px;
+    left: 12px;
+  }
+
+  &--facebook {
+    top: 14px;
+    left: 17px;
+  }
+
+  &--youtube {
+    top: 17px;
+    left: 11px;
+  }
+
+  &:active {
+    fill: @active-opacity;
+  }
 }

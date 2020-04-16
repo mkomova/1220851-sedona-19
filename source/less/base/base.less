@@ -39,9 +39,31 @@ a {
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+
+  &--index {
+    padding: 0;
+  }
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    padding: 0 60px;
+
+    &--index {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 0 120px;
+
+    &--photo {
+      padding: 0;
+    }
+
+    &--index {
+      padding: 0;
+    }
   }
 }

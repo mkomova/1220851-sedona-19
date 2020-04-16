@@ -1,3 +1,9 @@
+.about {
+  margin-left: 69px;
+  margin-right: 41px;
+  padding-left: 0;
+}
+
 .about__item {
   list-style: none;
 }
@@ -9,4 +15,45 @@
 .about__paragraph {
   .small-paragraph;
   color: @font-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 164px auto 66px;
+  }
+
+  .about__item {
+    text-align: center;
+
+    &--housing {
+      margin: auto 51px;
+      order: 1;
+    }
+
+    &--souvenirs {
+      margin: auto 46px;
+      order: 3;
+    }
+
+    &--food {
+      margin: auto 20px;
+      order: 2;
+    }
+  }
+
+  .about-title {
+    .bold-phrase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item {
+    &--food {
+      margin-left: 120px;
+      margin-right: 150px;
+    }
+  }
 }

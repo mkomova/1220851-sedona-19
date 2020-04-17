@@ -68,11 +68,14 @@ a {
   }
 }
 
-@media (min-width: @desktop-width) {
-  .background-color {
-    box-sizing: border-box;
-    background-color: @input-color;
-    padding: 0 40px;
-    margin: 0 auto;
-  }
+.wrapper {
+  box-sizing: border-box;
+  background-color: @input-color;
+  margin: 0 auto;
+}
+
+.page-header,
+.page-main,
+.page-footer {
+  box-shadow: 10px 5px 15px -15px rgba(0, 1, 1, 0.2), -10px 0 15px -15px rgba(0, 1, 1, 0.2);
 }

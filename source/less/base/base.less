@@ -74,8 +74,16 @@ a {
   margin: 0 auto;
 }
 
-.page-header,
-.page-main,
-.page-footer {
-  box-shadow: 10px 5px 15px -15px rgba(0, 1, 1, 0.2), -10px 0 15px -15px rgba(0, 1, 1, 0.2);
+.shadow-wrapper {
+  width: 320px;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

@@ -8,6 +8,7 @@ body {
   color: @font-black;
   font-style: normal;
   text-transform: uppercase;
+  background-color: @input-color;
 }
 
 img {
@@ -65,5 +66,21 @@ a {
     &--index {
       padding: 0;
     }
+  }
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 @main-shadow;
+  min-width: 320px;
+  max-width: 1200px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }

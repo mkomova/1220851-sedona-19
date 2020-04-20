@@ -8,6 +8,7 @@ body {
   color: @font-black;
   font-style: normal;
   text-transform: uppercase;
+  background-color: @input-color;
 }
 
 img {
@@ -70,14 +71,10 @@ a {
 
 .wrapper {
   box-sizing: border-box;
-  background-color: @input-color;
   margin: 0 auto;
-}
-
-.shadow-wrapper {
-  width: 320px;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
 
   @media (min-width: @tablet-width) {
     width: 768px;

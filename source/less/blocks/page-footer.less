@@ -1,10 +1,19 @@
 .page-footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  padding: 0;
   background-color: @bg-white;
+}
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31px 0 35px;
 }
 
 .page-footer__tag {
@@ -13,16 +22,16 @@
 
 .page-footer__copyright {
   position: relative;
+  margin-right: 42px;
   .big-paragraph;
-  text-decoration: none;
   color: #000000;
-  margin-right: 30px;
+  text-decoration: none;
 }
 
 .page-footer__academy {
   position: absolute;
   top: -5px;
-  right: -35px;
+  right: -40px;
 
   &:hover {
     fill: @bg-blue;
@@ -39,11 +48,16 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    padding: 29px 0 36px 0;
   }
 
   .page-footer__social {
@@ -51,10 +65,14 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  .page-footer__copyright {
+    margin: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    justify-content: space-between;
+  .page-footer__wrapper {
+    padding: 51px 0 53px 0;
   }
 }

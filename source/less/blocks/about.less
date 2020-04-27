@@ -1,15 +1,24 @@
 .about {
-  margin-left: 69px;
-  margin-right: 41px;
+  box-sizing: border-box;
+  margin: 10px 41px 23px 69px;
   padding-left: 0;
 }
 
 .about__item {
   list-style: none;
+
+  &--souvenirs {
+    margin-top: 29px;
+  }
+
+  &--food {
+    margin-top: 28px;
+  }
 }
 
 .about__title {
   .bold-title;
+  margin-bottom: 0;
 }
 
 .about__paragraph {
@@ -21,39 +30,59 @@
   .about {
     display: flex;
     justify-content: space-around;
+    margin: 130px auto 47px;
     padding: 0;
-    margin: 164px auto 66px;
+  }
+
+  .about__title {
+    .bold-phrase;
+  }
+
+  .about__paragraph {
+    margin-top: 22px;
   }
 
   .about__item {
+    box-sizing: border-box;
+    padding: 0 40px;
     text-align: center;
+    margin: auto;
 
     &--housing {
-      margin: auto 51px;
       order: 1;
     }
 
     &--souvenirs {
-      margin: auto 46px;
       order: 3;
     }
 
     &--food {
-      margin: auto 20px;
       order: 2;
     }
-  }
-
-  .about-title {
-    .bold-phrase;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    margin: 131px 0 67px;
+  }
+
   .about__item {
+    margin: 0;
+    padding: 0;
+
+    &--housing {
+      width: 252px;
+    }
+
+    &--souvenirs {
+      width: 214px;
+      margin-right: 22px;
+    }
+
     &--food {
-      margin-left: 120px;
-      margin-right: 150px;
+      width: 283px;
+      margin-right: 19px;
     }
   }
 }

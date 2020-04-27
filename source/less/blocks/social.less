@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
+  margin-bottom: 42px;
   padding: 0;
 }
 
@@ -9,7 +11,7 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 42px;
+  width: 46px;
   height: 48px;
   margin-right: 6px;
   background-color: @bg-blue;
@@ -31,20 +33,26 @@
 
   &--twitter {
     top: 17px;
-    left: 12px;
+    left: 15px;
   }
 
   &--facebook {
     top: 14px;
-    left: 17px;
+    left: 18px;
   }
 
   &--youtube {
     top: 17px;
-    left: 11px;
+    left: 14px;
   }
 
   &:active {
     fill: @active-opacity;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin: auto;
   }
 }

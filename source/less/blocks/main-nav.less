@@ -1,8 +1,8 @@
 .main-nav {
+  position: relative;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
-  position: relative;
 }
 
 .main-nav__list {
@@ -15,14 +15,41 @@
   position: absolute;
 }
 
+.main-nav__open-toggle {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  fill: @bg-blue;
+}
+
+.main-nav__close-toggle {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  z-index: 1;
+  fill: @icon-color;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
-    .big-paragraph;
     min-height: 56px;
+    .big-paragraph;
   }
 
   .main-nav__list {
     display: flex;
     justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__open-toggle {
+    display: none;
+  }
+
+  .main-nav__close-toggle {
+    display: none;
   }
 }

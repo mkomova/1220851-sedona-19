@@ -35,6 +35,11 @@
     flex-direction: column;
     padding: 0;
     border: none;
+
+    &--road {
+      margin: auto;
+      max-width: 648px;
+    }
   }
 
   .gallery__wrapper {
@@ -80,6 +85,12 @@
 @media (min-width: @desktop-width) {
   .gallery {
     margin: 0;
+  }
+
+  .gallery__block {
+    &--road {
+      max-width: 1200px;
+    }
   }
 
   .gallery__wrapper {

@@ -63,14 +63,14 @@
     &--bridge {
       flex-direction: row-reverse;
 
+      .reasons__title {
+        box-sizing: border-box;
+        margin: 15px 12px 5px;
+      }
+
       .reasons__wrapper {
         &--main {
           padding: 0 40px;
-        }
-
-        .reasons__title {
-          box-sizing: border-box;
-          margin: 15px 12px 5px;
         }
       }
     }
@@ -108,13 +108,13 @@
 @media (min-width: @desktop-width) {
   .reasons {
     &--bridge {
+      .reasons__title {
+        margin: 15px 35px 5px;
+      }
+
       .reasons__wrapper {
         &--main {
           padding: 0 90px;
-        }
-
-        .reasons__title {
-          margin: 15px 35px 5px;
         }
       }
     }

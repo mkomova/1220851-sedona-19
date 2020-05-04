@@ -35,22 +35,6 @@
       <div class="page-header__welcome page-header__welcome--index">
         <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
       </div>
-      <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-      </script>
     </header>
     <main class="page-main container container--photo">
       <div class="page-main__wrapper page-main__wrapper--photo">
@@ -146,5 +130,21 @@
       </a>
     </footer>
   </div>
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+  </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 .site-list__item a {
-  color: @font-white;
-  background-color: @bg-blue;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 55px;
+  color: @font-white;
+  background-color: @bg-blue;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
   &:hover {
@@ -12,8 +12,8 @@
   }
 
   &:active {
-    background-color: @bg-active-blue;
     color: rgba(255, 255, 255, 0.3);
+    background-color: @bg-active-blue;
   }
 
   &:disabled {
@@ -23,12 +23,12 @@
 
 @media (min-width: @tablet-width) {
   .site-list__item a {
-    color: @font-black;
-    background-color: @bg-white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: @font-black;
     font-weight: bold;
+    background-color: @bg-white;
     box-shadow: none;
 
     &:hover {

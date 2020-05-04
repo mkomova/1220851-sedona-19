@@ -2,11 +2,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-style: normal;
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: @font-black;
-  font-style: normal;
   text-transform: uppercase;
   background-color: @input-color;
 }
@@ -38,17 +38,17 @@ a {
 
 .container {
   box-sizing: border-box;
-  width: 320px;
+  min-width: 320px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 6.25%;
 
   &--index {
     padding: 0;
   }
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-    padding: 0 60px;
+    padding: 0 8%;
 
     &--index {
       padding: 0;
@@ -56,28 +56,59 @@ a {
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    padding: 0 120px;
+    padding: 0 10%;
 
+    &--index,
     &--photo {
-      padding: 0;
-    }
-
-    &--index {
       padding: 0;
     }
   }
 }
 
+/* todo: контейнер для фиксированной верстки */
+/*.container {
+box-sizing: border-box;
+width: 320px;
+margin: 0 auto;
+padding: 0 20px;
+
+&--index {
+padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+width: 768px;
+padding: 0 60px;
+
+&--index {
+padding: 0;
+}
+}
+
+@media (min-width: @desktop-width) {
+width: 1200px;
+padding: 0 120px;
+
+&--photo {
+padding: 0;
+}
+
+&--index {
+padding: 0;
+}
+}
+}
+*/
+
 .wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px 0 @main-shadow;
   min-width: 320px;
   max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 @main-shadow;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {

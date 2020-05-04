@@ -10,20 +10,47 @@
 <body>
   <div class="wrapper">
     <header class="page-header container container--index">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span>
+          <svg  class="main-nav__close-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          </svg>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__open-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964"/>
+              <rect y="9.009" width="22.928" height="3.964"/>
+              <rect y="18.018" width="22.928" height="3.964"/>
+            </g>
+          </svg>
+        </button>
       </nav>
-      <div class="page-header__welcome">
-        <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
+      <div class="page-header__welcome page-header__welcome--index">
+        <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
       </div>
+      <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+      </script>
     </header>
     <main class="page-main container container--photo">
       <div class="page-main__wrapper page-main__wrapper--photo">
@@ -33,7 +60,7 @@
         </p>
       </div>
       <section class="gallery">
-        <div class="gallery__block">
+        <div class="gallery__block gallery__block--road">
           <img class="gallery__img gallery__img--road" src="https://via.placeholder.com/150x150" width="648" height="400" alt="Road of Sedona">
           <div class="gallery__wrapper">
             <div class="gallery__title-copyright">

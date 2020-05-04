@@ -3,7 +3,8 @@
 }
 
 .map__title-paragraph {
-  margin: 33px 30px;
+  box-sizing: border-box;
+  margin: 28px 20px;
 }
 
 .map__title {
@@ -17,9 +18,15 @@
 
 .map__find-button {
   box-sizing: border-box;
-  padding: 17px 0 19px 0;
   width: 100%;
-  margin-bottom: 49px;
+  margin: 34px auto 49px;
+  padding: 15px 0;
+}
+
+.map__img {
+  width: 320px;
+  height: 350px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,7 +38,7 @@
   }
 
   .map__title-paragraph {
-    margin: 57px 167px 47px;
+    margin: 26px 167px 47px;
   }
 
   .map__title {
@@ -41,7 +48,7 @@
   }
 
   .map__find-button {
-    margin-bottom: 58px;
+    margin: 43px auto 13px;
   }
 
   .map__img {
@@ -54,11 +61,12 @@
   .map__img {
     width: 1200px;
     height: 350px;
+    margin-bottom: 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .map__img {
-    margin-bottom: 36px;
+@media (min-width: @desktop-width) {
+  .map__paragraph {
+    width: 434px;
   }
 }

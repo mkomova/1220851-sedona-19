@@ -3,28 +3,46 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  &--bridge {
+    .reasons__wrapper {
+      &--main {
+        padding: 15px 25px 27px;
+      }
+    }
+  }
 }
 
 .reasons__wrapper {
+  box-sizing: border-box;
+
   &--main {
-    box-sizing: border-box;
+    padding: 31px 25px 27px;
     color: @font-white;
     background-color: @bg-blue;
-    padding: 61px 27px 45px;
   }
 
   &--secondary {
-    box-sizing: border-box;
+    padding: 3px 41px;
     background-color: @bg-grey;
-    padding: 33px 41px;
+  }
+
+  &--tourists {
+    padding: 3px 31px 15px;
   }
 }
 
 .reasons__title {
+  margin-bottom: 0;
   .bold-title;
+
+  &--advantages {
+    margin-top: 35px;
+  }
 }
 
 .reasons__paragraph {
+  margin-top: 9px;
   .small-paragraph;
 
   &--secondary {
@@ -33,6 +51,8 @@
 }
 
 .reasons__img {
+  width: 320px;
+  height: 260px;
   margin: auto;
 }
 
@@ -42,6 +62,17 @@
 
     &--bridge {
       flex-direction: row-reverse;
+
+      .reasons__title {
+        box-sizing: border-box;
+        margin: 15px 12px 5px;
+      }
+
+      .reasons__wrapper {
+        &--main {
+          padding: 0 40px;
+        }
+      }
     }
   }
 
@@ -53,31 +84,42 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 256px;
-      padding: 0 50px;
+      width: 33%;
+      padding: 0 40px;
     }
 
     &--secondary {
-      padding: 35px 55px;
+      padding: 29px 55px;
     }
-  }
-
-  .reasons__paragraph {
-    margin-top: 0;
   }
 
   .reasons__img {
     display: flex;
-    width: 512px;
+    width: 67%;
     height: 256px;
   }
 
   .reasons__title {
+    margin-top: 15px;
     .bold-phrase;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .reasons {
+    &--bridge {
+      .reasons__title {
+        margin: 15px 35px 5px;
+      }
+
+      .reasons__wrapper {
+        &--main {
+          padding: 0 90px;
+        }
+      }
+    }
+  }
+
   .reasons__wrapper {
     &--main {
       box-sizing: border-box;
@@ -87,8 +129,12 @@
     }
 
     &--secondary {
-      box-sizing: border-box;
-      padding: 50px 85px 70px;
+      padding: 43px 55px;
+
+      .reasons__title {
+        box-sizing: border-box;
+        margin: 0 70px 10px;
+      }
     }
   }
 

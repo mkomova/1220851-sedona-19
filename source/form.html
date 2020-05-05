@@ -17,7 +17,7 @@
           </svg>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
@@ -35,22 +35,6 @@
       <div class="page-header__welcome page-header__welcome--index">
         <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
       </div>
-      <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-      </script>
     </header>
     <main class="page-main container">
       <div class="page-main__wrapper page-main__wrapper--form">
@@ -202,5 +186,6 @@
       <button class="popup__button popup__button--close button button--popup" type="button">Закрыть окно</button>
     </div>
   </section>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -51,14 +51,19 @@
 }
 
 .reasons__img {
-  width: 320px;
-  height: 260px;
+  width: 100%;
   margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .reasons {
     flex-direction: row;
+
+    &--secondary {
+      display: flex;
+      max-width: 900px;
+      margin: auto;
+    }
 
     &--bridge {
       flex-direction: row-reverse;
@@ -95,8 +100,6 @@
 
   .reasons__img {
     display: flex;
-    width: 67%;
-    height: 256px;
   }
 
   .reasons__title {
@@ -107,6 +110,10 @@
 
 @media (min-width: @desktop-width) {
   .reasons {
+    &--secondary {
+      max-width: 100%;
+    }
+
     &--bridge {
       .reasons__title {
         margin: 15px 35px 5px;

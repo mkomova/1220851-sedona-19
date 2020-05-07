@@ -21,6 +21,15 @@
   }
 }
 
+.site-list__logo {
+  position: relative;
+  top: 22px;
+}
+
+.site-list__item .site-list__link {
+  background-color: @bg-white;
+}
+
 @media (min-width: @tablet-width) {
   .site-list__item a {
     display: flex;
@@ -40,5 +49,38 @@
       color: @active-opacity;
       background-color: white;
     }
+  }
+
+  .site-list__item {
+    &--index {
+      order: 1;
+    }
+
+    &--photo {
+      order: 2;
+    }
+
+    &--logo {
+      order: 3;
+    }
+
+    &--form {
+      order: 4;
+    }
+
+    &--academy {
+      order: 5;
+    }
+  }
+
+  .site-list__logo {
+    top: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__logo {
+    width: 188px;
+    height: 96px;
   }
 }

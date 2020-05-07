@@ -30,9 +30,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .gallery__big-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
   .gallery__block {
     display: flex;
     flex-direction: column;
+    max-width: 324px;
     padding: 0;
     border: none;
 
@@ -70,12 +77,6 @@
     align-items: center;
   }
 
-  .gallery__big-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
   .gallery__img {
     margin: 0 auto;
     padding: 0;
@@ -88,6 +89,8 @@
   }
 
   .gallery__block {
+    max-width: 400px;
+
     &--road {
       max-width: 1200px;
     }

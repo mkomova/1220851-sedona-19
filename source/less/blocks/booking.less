@@ -1,0 +1,47 @@
+.booking {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 28px 20px;
+}
+
+.booking__title {
+  .bold-phrase;
+}
+
+.booking__paragraph {
+  .paragraph;
+  color: @font-grey;
+}
+
+.booking__find-button {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 34px auto 49px;
+  padding: 15px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 26px 167px 47px;
+  }
+
+  .booking__title {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .booking__find-button {
+    margin: 43px auto 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking__paragraph {
+    width: 434px;
+  }
+}

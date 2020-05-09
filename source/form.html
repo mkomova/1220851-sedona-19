@@ -14,7 +14,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span>
         <svg  class="main-nav__close-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
             <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-          </svg>
+        </svg>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--index site-list__item--active"><a href="index.html">Главная</a></li>
@@ -38,7 +38,7 @@
                   <rect y="9.009" width="22.928" height="3.964"/>
                   <rect y="18.018" width="22.928" height="3.964"/>
                 </g>
-              </svg>
+        </svg>
       </button>
     </nav>
     <div class="page-header__welcome">
@@ -53,18 +53,18 @@
       </p>
     </div>
     <section class="inquirer">
-      <form class="inquirer__form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="inquirer__form" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="inquirer__profile inquirer__profile--introduce">
           <h4 class="inquirer__title">Представьтесь:</h4>
-          <label class="inquirer__wrapper">
+          <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Имя*:</span>
             <input class="inquirer__input" type="text" name="username" placeholder="Петр">
           </label>
-          <label class="inquirer__wrapper">
+          <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Фамилия*:</span>
             <input class="inquirer__input" type="text" name="username" placeholder="Иванов">
           </label>
-          <label class="inquirer__wrapper">
+          <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Отчество:</span>
             <input class="inquirer__input" type="text" name="username" placeholder="Александрович">
           </label>
@@ -72,11 +72,11 @@
         <div class="inquirer__profile inquirer__profile--contacts">
           <h4 class="inquirer__title">Контактная информация:</h4>
           <div class="inquirer__contacts-wrapper">
-            <label class="inquirer__wrapper">
+            <label class="inquirer__field-wrapper">
               <span class="inquirer__label"><span class="hidden-word">Контактный</span> телефон*:</span>
               <input class="inquirer__input inquirer__input--contacts" type="text" name="phone" placeholder="Введите телефон">
             </label>
-            <label class="inquirer__wrapper">
+            <label class="inquirer__field-wrapper">
               <span class="inquirer__label">Электронная почта*:</span>
               <input class="inquirer__input inquirer__input--contacts" type="text" name="email" placeholder="Введите e-mail">
             </label>
@@ -138,9 +138,9 @@
           <h4 class="inquirer__title">Опишите свои эмоции:</h4>
           <textarea class="inquirer__textarea" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
+        <button class="inquirer__send-button button" type="submit">Отправить отзыв</button>
+        <p class="inquirer__comment">* - Обязательные поля</p>
       </form>
-      <button class="inquirer__send-button button" type="submit">Отправить отзыв</button>
-      <p class="inquirer__comment">* - Обязательные поля</p>
     </section>
   </main>
   <footer class="page-footer container">

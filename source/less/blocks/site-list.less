@@ -1,23 +1,34 @@
-.site-list__item a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
-  color: @font-white;
-  background-color: @bg-blue;
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+.site-list__item {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    color: @font-white;
+    background-color: @bg-blue;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
-  &:hover {
-    background-color: @bg-hover-blue;
+    &:hover {
+      background-color: @bg-hover-blue;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: @bg-active-blue;
+    }
+
+    &:disabled {
+      background-color: @bg-disabled;
+    }
   }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: @bg-active-blue;
-  }
+  .site-list__link {
+    background-color: @bg-white;
 
-  &:disabled {
-    background-color: @bg-disabled;
+    &:hover,
+    &:active {
+      background-color: @bg-white;
+    }
   }
 }
 
@@ -26,36 +37,32 @@
   top: 22px;
 }
 
-.site-list__item .site-list__link {
-  background-color: @bg-white;
-}
-
 @media (min-width: @tablet-width) {
-  .site-list__item a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: @font-black;
-    font-weight: bold;
-    background-color: @bg-white;
-    box-shadow: none;
-
-    &:hover {
-      color: @bg-blue;
-      background-color: white;
-    }
-
-    &:active {
-      color: @active-opacity;
-      background-color: white;
-    }
-  }
-
-  .site-list__item .site-list__link {
-    align-items: baseline;
-  }
-
   .site-list__item {
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: @font-black;
+      font-weight: bold;
+      background-color: @bg-white;
+      box-shadow: none;
+
+      &:hover {
+        color: @bg-blue;
+        background-color: white;
+      }
+
+      &:active {
+        color: @active-opacity;
+        background-color: white;
+      }
+    }
+
+    .site-list__link {
+      align-items: baseline;
+    }
+
     &--index {
       order: 1;
     }

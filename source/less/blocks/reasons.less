@@ -11,6 +11,17 @@
       }
     }
   }
+
+  &--secondary {
+    .reasons__wrapper {
+      padding: 3px 41px;
+      background-color: @bg-grey;
+    }
+
+    .reasons__paragraph {
+      color: @font-grey;
+    }
+  }
 }
 
 .reasons__wrapper {
@@ -20,11 +31,6 @@
     padding: 31px 25px 27px;
     color: @font-white;
     background-color: @bg-blue;
-  }
-
-  &--secondary {
-    padding: 3px 41px;
-    background-color: @bg-grey;
   }
 
   &--tourists {
@@ -44,21 +50,26 @@
 .reasons__paragraph {
   margin-top: 9px;
   .small-paragraph;
-
-  &--secondary {
-    color: @font-grey;
-  }
 }
 
 .reasons__img {
-  width: 320px;
-  height: 260px;
+  width: 100%;
   margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .reasons {
     flex-direction: row;
+
+    &--secondary {
+      display: flex;
+      max-width: 900px;
+      margin: auto;
+
+      .reasons__wrapper {
+        padding: 29px 55px;
+      }
+    }
 
     &--bridge {
       flex-direction: row-reverse;
@@ -87,16 +98,10 @@
       width: 33%;
       padding: 0 40px;
     }
-
-    &--secondary {
-      padding: 29px 55px;
-    }
   }
 
   .reasons__img {
     display: flex;
-    width: 67%;
-    height: 256px;
   }
 
   .reasons__title {
@@ -107,6 +112,19 @@
 
 @media (min-width: @desktop-width) {
   .reasons {
+    &--secondary {
+      max-width: 100%;
+
+      .reasons-wrapper {
+        padding: 43px 55px;
+      }
+
+      .reasons__title {
+        box-sizing: border-box;
+        margin: 0 70px 10px;
+      }
+    }
+
     &--bridge {
       .reasons__title {
         margin: 15px 35px 5px;
@@ -126,15 +144,6 @@
       width: 400px;
       height: 256px;
       padding: 0 60px;
-    }
-
-    &--secondary {
-      padding: 43px 55px;
-
-      .reasons__title {
-        box-sizing: border-box;
-        margin: 0 70px 10px;
-      }
     }
   }
 

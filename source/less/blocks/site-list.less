@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    min-height: 55px;
     color: @font-white;
     background-color: @bg-blue;
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
@@ -50,12 +50,12 @@
 
       &:hover {
         color: @bg-blue;
-        background-color: white;
+        background-color: @bg-white;
       }
 
       &:active {
         color: @active-opacity;
-        background-color: white;
+        background-color: @bg-white;
       }
     }
 

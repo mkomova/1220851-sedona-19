@@ -10,6 +10,48 @@
       margin: 10px 0;
     }
   }
+
+  &--impression {
+    .control-text::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -70px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: @input-color;
+    }
+
+    .control-text:hover::before {
+      background-color: @radio-checkbox-hover;
+    }
+
+    .control-text:active::before {
+      background-color: @radio-checkbox-active;
+    }
+  }
+
+  &--attractions {
+    .control-text::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -70px;
+      width: 46px;
+      height: 46px;
+      border-radius: 10%;
+      background-color: @input-color;
+    }
+
+    .control-text:hover::before {
+      background-color: @radio-checkbox-hover;
+    }
+
+    .control-text:active::before {
+      background-color: @radio-checkbox-active;
+    }
+  }
 }
 
 .inquirer__title {
@@ -99,6 +141,16 @@
   font-family: "PT Sans", "Arial", sans-serif;
   background-color: @input-color;
   border: none;
+  outline: none;
+
+  &:hover {
+    background-color: @bg-hover-input;
+  }
+
+  &:active {
+    background-color: @bg-active-input;
+    border: 5px solid @bg-hover-input;
+  }
 }
 
 .inquirer__button {
@@ -128,33 +180,6 @@
   .bold-title;
   color: @font-black;
   text-transform: none;
-
-  &--positive::before,
-  &--negative::before,
-  &--neutral::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -70px;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: @input-color;
-  }
-
-  &--bridge::before,
-  &--mountain::before,
-  &--park::before,
-  &--rock::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -70px;
-    width: 46px;
-    height: 46px;
-    border-radius: 10%;
-    background-color: @input-color;
-  }
 }
 
 .inquirer__checkbox-section {
@@ -196,6 +221,7 @@
   background-color: @input-color;
   border: none;
   resize: none;
+  outline: none;
 }
 
 .inquirer__send-button {

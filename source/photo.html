@@ -148,39 +148,41 @@
         </div>
       </div>
     </section>
-    <div class="page-main__player-wrapper">
-      <div class="page-main__wrapper page-main__wrapper--video">
-        <h4 class="page-main__title page-main__title">Все еще сомневаетесь?</h4>
-        <p class="page-main__paragraph page-main__paragraph">
+    <section class="player">
+      <div class="player__wrapper">
+        <h4 class="player__title">Все еще сомневаетесь?</h4>
+        <p class="player__paragraph">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </div>
-      <picture class="page-main__video-player">
+      <picture class="player__video-preview">
         <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/video-desktop@1x.webp 1x, img/webp/video-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/video-tablet@1x.webp 1x, img/webp/video-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/webp/video-mobile@1x.webp 1x, img/webp/video-mobile@2x.webp 2x">
         <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-        <img class="page-main__video-preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
+        <img class="player__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
           width="648" height="499" alt="preview video of Sedona">
       </picture>
-      <span class="page-main__volume-scale"></span>
-      <button class="page-main__video-button" type="button">
-        <svg class="page-main__icon page-main__icon--replay" version="1.0" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
-          <use xlink:href="img/sprite.svg#replay-icon"></use>
-        </svg>
-      </button>
-      <button class="page-main__video-button" type="button">
-        <svg class="page-main__icon page-main__icon--subtitles" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
-          <use xlink:href="img/sprite.svg#subtitles-icon"></use>
-        </svg>
-      </button>
-      <button class="page-main__video-button" type="button">
-        <svg class="page-main__icon page-main__icon--fullscreen" version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-          <use xlink:href="img/sprite.svg#fullscreen-icon"></use>
-        </svg>
-      </button>
-    </div>
+      <div class="player__controls">
+        <span class="player__volume-scale"></span>
+        <button class="player__button" type="button">
+          <svg class="player__icon player__icon--replay" version="1.0" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+            <use xlink:href="img/sprite.svg#replay-icon"></use>
+          </svg>
+        </button>
+        <button class="player__button" type="button">
+          <svg class="player__icon player__icon--subtitles" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
+            <use xlink:href="img/sprite.svg#subtitles-icon"></use>
+          </svg>
+        </button>
+        <button class="player__button" type="button">
+          <svg class="player__icon player__icon--fullscreen" version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <use xlink:href="img/sprite.svg#fullscreen-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
   </main>
   <footer class="page-footer container">
     <p class="page-footer__tag">#VisitSedona</p>

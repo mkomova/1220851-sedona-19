@@ -74,13 +74,12 @@
           <div class="inquirer__contacts-wrapper">
             <label class="inquirer__field-wrapper">
               <span class="inquirer__label inquirer__label--phone"><span class="hidden-word">Контактный</span> телефон*:</span>
-              <input class="inquirer__input" type="text" name="phone"
+              <input class="inquirer__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required
                 placeholder="Введите телефон">
             </label>
             <label class="inquirer__field-wrapper">
               <span class="inquirer__label inquirer__label--mail">Электронная почта*:</span>
-              <input class="inquirer__input" type="text" name="email"
-                placeholder="Введите e-mail">
+              <input class="inquirer__input" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </div>
         </div>

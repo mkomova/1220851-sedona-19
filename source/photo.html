@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="page-header container container--index">
+  <header class="page-header container container--indent">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--close" type="button"><span
         class="visually-hidden">Закрыть меню</span>
@@ -45,7 +45,7 @@
       <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
     </div>
   </header>
-  <main class="page-main container container--index">
+  <main class="page-main container container--indent">
     <div class="page-main__wrapper page-main__wrapper--photo">
       <h2 class="page-main__title page-main__title">Фото и видео</h2>
       <p class="page-main__paragraph page-main__paragraph">
@@ -174,20 +174,22 @@
             width="648" height="499" alt="preview video of Sedona">
         </picture>
       </a>
-      <div class="player__controls">
+      <div class="player__mobile-controls">
         <span class="player__volume-scale"></span>
-        <button class="player__button" type="button">
-          <svg class="player__icon player__icon--replay" version="1.0" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+      </div>
+      <div class="player__controls">
+        <button class="player__button player__button--replay" type="button">
+          <svg class="player__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
             <use xlink:href="img/sprite.svg#replay-icon"></use>
           </svg>
         </button>
-        <button class="player__button" type="button">
-          <svg class="player__icon player__icon--subtitles" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
+        <button class="player__button player__button--subtitles" type="button">
+          <svg class="player__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
             <use xlink:href="img/sprite.svg#subtitles-icon"></use>
           </svg>
         </button>
-        <button class="player__button" type="button">
-          <svg class="player__icon player__icon--fullscreen" version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <button class="player__button player__button--fullscreen" type="button">
+          <svg class="player__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <use xlink:href="img/sprite.svg#fullscreen-icon"></use>
           </svg>
         </button>

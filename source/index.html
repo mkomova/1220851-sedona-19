@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="page-header container container--index">
+  <header class="page-header container container--indent">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Закрыть меню</span>
@@ -45,19 +45,20 @@
       <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
     </div>
   </header>
-  <main class="page-main container container--index">
+  <main class="page-main container container--indent">
     <div class="page-main__wrapper page-main__wrapper--index">
       <h2 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="page-main__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     <article class="features">
       <section class="reasons">
+        <span class="reasons__triangle"></span>
         <div class="reasons__wrapper reasons__wrapper--main">
           <h4 class="reasons__title">Настоящий городок</h4>
-          <p class="reasons__paragraph">-№1-</p>
-          <p class="reasons__paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="reasons__paragraph">— №1 —</p>
+          <p class="reasons__paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <picture>
+        <picture class="reasons__picture">
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-city-desktop@1x.webp 1x, img/webp/main-city-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-city-tablet@1x.webp 1x, img/webp/main-city-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/webp/main-city-mobile@1x.webp 1x, img/webp/main-city-mobile@2x.webp 2x">
@@ -69,21 +70,21 @@
       </section>
       <ul class="features__list about">
         <li class="about__item about__item--housing">
-          <svg class="about__icon about__icon--house" xmlns="http://www.w3.org/2000/svg" width="74.695" height="72.346">
+          <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="74.695" height="72.346">
             <use xlink:href="img/sprite.svg#house-icon"></use>
           </svg>
           <h4 class="about__title">Жилье</h4>
           <p class="about__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="about__item about__item--souvenirs">
-          <svg class="about__icon about__icon--gift" xmlns="http://www.w3.org/2000/svg" width="63" height="75.084">
+          <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="63" height="75.084">
             <use xlink:href="img/sprite.svg#gift-icon"></use>
           </svg>
           <h4 class="about__title">Сувениры</h4>
           <p class="about__paragraph">Не только китайского, но и местного производства!</p>
         </li>
         <li class="about__item about__item--food">
-          <svg class="about__icon about__icon--burger" xmlns="http://www.w3.org/2000/svg" width="76.166" height="68.959">
+          <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="76.166" height="68.959">
             <use xlink:href="img/sprite.svg#burger-icon"></use>
           </svg>
           <h4 class="about__title">Еда</h4>
@@ -93,10 +94,10 @@
       <section class="reasons reasons--bridge">
         <div class="reasons__wrapper reasons__wrapper--main">
           <h4 class="reasons__title">Там есть мост дьявола</h4>
-          <p class="reasons__paragraph">-№2-</p>
+          <p class="reasons__paragraph">— №2 —</p>
           <p class="reasons__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <picture>
+        <picture class="reasons__picture">
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-bridge-desktop@1x.webp 1x, img/webp/main-bridge-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-bridge-tablet@1x.webp 1x, img/webp/main-bridge-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/webp/main-bridge-mobile@1x.webp 1x, img/webp/main-bridge-mobile@2x.webp 2x">
@@ -109,19 +110,19 @@
         </picture>
       </section>
       <section class="reasons reasons--secondary">
-        <div class="reasons__wrapper">
+        <div class="reasons__wrapper reasons__wrapper--area">
           <h4 class="reasons__title">Небольшая площадь</h4>
-          <p class="reasons__paragraph">-№3-</p>
+          <p class="reasons__paragraph">— №3 —</p>
           <p class="reasons__paragraph">Все интересные места находятся очень близко</p>
         </div>
-        <div class="reasons__wrapper">
-          <h4 class="reasons__title reasons__title--advantages">Красивая дорога</h4>
-          <p class="reasons__paragraph">-№4-</p>
+        <div class="reasons__wrapper reasons__wrapper--road">
+          <h4 class="reasons__title">Красивая дорога</h4>
+          <p class="reasons__paragraph">— №4 —</p>
           <p class="reasons__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reasons__wrapper reasons__wrapper--tourists">
-          <h4 class="reasons__title reasons__title--advantages">Мало туристов</h4>
-          <p class="reasons__paragraph">-№5-</p>
+          <h4 class="reasons__title">Мало туристов</h4>
+          <p class="reasons__paragraph">— №5 —</p>
           <p class="reasons__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </section>

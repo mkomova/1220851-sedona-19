@@ -3,6 +3,7 @@
   box-sizing: border-box;
   flex-direction: column;
   margin: 20px 0;
+  padding-bottom: 30px;
   background-color: @bg-white;
 }
 
@@ -30,65 +31,63 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .player__preview {
   display: flex;
+  width: 100%;
 }
 
 .player__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  max-width: 569px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: @input-color;
+}
+
+.player__mobile-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  max-width: 569px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: -45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player__volume-scale {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 700px;
   margin: 0 auto;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -66px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 87%;
-    height: 66px;
-    background-color: @input-color;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 87%;
-    height: 45px;
-    z-index: 1;
-    background-color: rgba(57, 35, 20, 0.6);
-  }
-}
-
-.player__volume-scale {
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
     width: 74%;
+    min-width: 235px;
+    max-width: 500px;
     height: 3px;
     background-color: @video-icon-color-tablet;
+    opacity: 0.2;
   }
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 16px;
-    left: 22%;
+    bottom: -4px;
+    left: 24%;
     right: 0;
     width: 11px;
     height: 10px;
@@ -99,36 +98,45 @@
 }
 
 .player__button {
-  position: relative;
-  width: 320px;
+  display: flex;
   padding: 0;
+  z-index: 1;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.player__icon {
-  position: absolute;
-  bottom: -45px;
-  height: 20px;
-  z-index: 1;
-  fill: @video-icon-color;
 
   &--replay {
-    left: 40%;
-    width: 16px;
+    margin-left: 30px;
+
+    .player__icon {
+      width: 16px;
+    }
   }
 
   &--subtitles {
-    left: 110%;
-    width: 32px;
+    margin-left: auto;
+
+    .player__icon {
+      width: 32px;
+    }
   }
 
   &--fullscreen {
-    left: 50%;
-    width: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+
+    .player__icon {
+      width: 20px;
+    }
   }
+}
+
+.player__icon {
+  display: flex;
+  height: 20px;
+  z-index: 1;
+  fill: @video-icon-color;
 
   &:hover {
     fill: @video-icon-color-hover;
@@ -141,46 +149,40 @@
 }
 
 @media (min-width: @tablet-width) {
-  .player__controls {
-    &::after {
-      display: none;
-    }
+  .player {
+    padding: 0 7.8%;
+  }
 
-    &::before {
-      width: 648px;
-      height: 93px;
-    }
+  .player__controls {
+    width: 100%;
+    min-width: 648px;
+    max-width: 800px;
+    height: 93px;
+    margin-top: -93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__mobile-controls {
+    max-width: 800px;
+    background-color: transparent;
   }
 
   .player__volume-scale {
     &::after {
-      bottom: 45px;
-      width: 60%;
-      margin-left: 93px;
+      left: 0;
+      right: 40px;
+      bottom: 20px;
+      width: 74%;
     }
 
     &::before {
-      bottom: 42px;
+      bottom: 16px;
       left: 33%;
     }
   }
 
   .player__icon {
-    bottom: 40px;
-    z-index: 1;
     fill: @video-icon-color-tablet;
-
-    &--replay {
-      left: 25%;
-    }
-
-    &--subtitles {
-      left: 140%;
-    }
-
-    &--fullscreen {
-      left: 60%;
-    }
 
     &:hover {
       fill-opacity: 0.6;
@@ -190,18 +192,31 @@
       fill-opacity: 0.3;
     }
   }
+
+  .player__preview {
+    max-width: 800px;
+  }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .player__preview {
     width: 800px;
   }
 
-  .player__controls {
-    &::before {
-      left: auto;
-      right: auto;
-      width: 800px;
+  .player__volume-scale {
+    &::after {
+      width: 80%;
+      max-width: 540px;
+    }
+  }
+
+  .player__button {
+    &--replay {
+      margin-left: 35px;
+    }
+
+    &--fullscreen {
+      margin-right: 42px;
     }
   }
 }

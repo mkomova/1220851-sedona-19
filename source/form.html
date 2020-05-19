@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="page-header container container--index">
+  <header class="page-header container container--indent">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--close" type="button"><span
         class="visually-hidden">Закрыть меню</span>
@@ -58,11 +58,11 @@
           <h4 class="inquirer__title">Представьтесь:</h4>
           <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Имя*:</span>
-            <input class="inquirer__input" type="text" name="username" placeholder="Петр">
+            <input class="inquirer__input" type="text" name="username" placeholder="Петр" required>
           </label>
           <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Фамилия*:</span>
-            <input class="inquirer__input" type="text" name="username" placeholder="Иванов">
+            <input class="inquirer__input" type="text" name="username" placeholder="Иванов" required>
           </label>
           <label class="inquirer__field-wrapper">
             <span class="inquirer__label">Отчество:</span>
@@ -127,7 +127,7 @@
                 <span class="control-text">Гора-Колокол</span>
               </label>
             </li>
-            <li class="inquirer__item inquirer">
+            <li class="inquirer__item">
               <label>
                 <input class="checkbox visually-hidden" type="checkbox" name="checkbox" checked>
                 <svg class="inquirer__icon-check" version="1.0" xmlns="http://www.w3.org/2000/svg" width="23.049" height="16.249">

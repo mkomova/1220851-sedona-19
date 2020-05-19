@@ -48,11 +48,11 @@
       </svg>
     </div>
   </header>
-  <main class="page-main container">
-    <div class="page-main__wrapper page-main__wrapper--inner">
+  <main class="page-main container container--indent">
+    <div class="page-main__wrapper page-main__wrapper--form">
       <h2 class="page-main__title">Оставьте свой отзыв</h2>
       <p class="page-main__paragraph">
-        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </div>
     <section class="inquirer">
@@ -76,7 +76,7 @@
           <h4 class="inquirer__title">Контактная информация:</h4>
           <div class="inquirer__contacts-wrapper">
             <label class="inquirer__field-wrapper">
-              <span class="inquirer__label inquirer__label--phone"><span class="hidden-word">Контактный</span> телефон*:</span>
+              <span class="inquirer__label inquirer__label--phone"><span class="hidden-word">Контактный </span> телефон*:</span>
               <input class="inquirer__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required
                 placeholder="Введите телефон">
             </label>
@@ -91,20 +91,20 @@
           <ul class="inquirer__radio-buttons">
             <li class="inquirer__button">
               <label>
-                <input class="radio visually-hidden" type="radio" name="radio" checked>
-                <span class="control-text checked">Скорее положительное</span>
+                <input class="inquirer__radio visually-hidden" type="radio" name="radio" checked>
+                <span class="inquirer__control-label">Скорее положительное</span>
               </label>
             </li>
             <li class="inquirer__button">
               <label>
-                <input class="radio visually-hidden" type="radio" name="radio">
-                <span class="control-text checked">Скорее отрицательное</span>
+                <input class="inquirer__radio visually-hidden" type="radio" name="radio">
+                <span class="inquirer__control-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="inquirer__button">
               <label>
-                <input class="radio visually-hidden" type="radio" name="radio">
-                <span class="control-text checked">Затрудняюсь ответить</span>
+                <input class="inquirer__radio visually-hidden" type="radio" name="radio">
+                <span class="inquirer__control-label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -114,38 +114,38 @@
           <ul class="inquirer__checkbox-section">
             <li class="inquirer__item">
               <label>
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox" checked>
+                <input class="inquirer__checkbox visually-hidden" type="checkbox" name="checkbox" checked>
                 <svg class="inquirer__icon-check" version="1.0" xmlns="http://www.w3.org/2000/svg" width="23.049" height="16.249">
                   <use xlink:href="img/sprite.svg#check-icon"></use>
                 </svg>
-                <span class="control-text">Мост Дьявола</span>
+                <span class="inquirer__control-label">Мост Дьявола</span>
               </label>
             </li>
             <li class="inquirer__item">
               <label>
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox" checked>
+                <input class="inquirer__checkbox visually-hidden" type="checkbox" name="checkbox" checked>
                 <svg class="inquirer__icon-check" version="1.0" xmlns="http://www.w3.org/2000/svg" width="23.049" height="16.249">
                   <use xlink:href="img/sprite.svg#check-icon"></use>
                 </svg>
-                <span class="control-text">Гора-Колокол</span>
+                <span class="inquirer__control-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="inquirer__item">
               <label>
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox" checked>
+                <input class="inquirer__checkbox visually-hidden" type="checkbox" name="checkbox" checked>
                 <svg class="inquirer__icon-check" version="1.0" xmlns="http://www.w3.org/2000/svg" width="23.049" height="16.249">
                   <use xlink:href="img/sprite.svg#check-icon"></use>
                 </svg>
-                <span class="control-text">Слайд-парк</span>
+                <span class="inquirer__control-label">Слайд-парк</span>
               </label>
             </li>
             <li class="inquirer__item">
               <label>
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox">
+                <input class="inquirer__checkbox visually-hidden" type="checkbox" name="checkbox">
                 <svg class="inquirer__icon-check" version="1.0" xmlns="http://www.w3.org/2000/svg" width="23.049" height="16.249">
                   <use xlink:href="img/sprite.svg#check-icon"></use>
                 </svg>
-                <span class="control-text">Красные скалы</span>
+                <span class="inquirer__control-label">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -155,7 +155,9 @@
           <textarea class="inquirer__textarea" rows="5" cols="40"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button class="inquirer__send-button button" type="submit">Отправить отзыв</button>
+        <div class="inquirer__button-wrapper">
+          <button class="inquirer__send-button button" type="submit">Отправить отзыв</button>
+        </div>
         <p class="inquirer__comment">* - Обязательные поля</p>
       </form>
     </section>

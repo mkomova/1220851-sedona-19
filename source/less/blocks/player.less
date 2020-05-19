@@ -49,7 +49,7 @@
   background-color: @input-color;
 }
 
-.player__mobile-controls {
+.player__block-controls {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,41 +59,38 @@
   margin: 0 auto;
   margin-top: -45px;
   background-color: rgba(0, 0, 0, 0.6);
-}
-
-.player__volume-scale {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -3px;
-    margin: 0 auto;
-    width: 74%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 3px;
-    background-color: @video-icon-color-tablet;
-    opacity: 0.2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 20%;
+    bottom: 129px;
+    left: 24%;
     right: 0;
     width: 11px;
     height: 10px;
     border-radius: 50%;
     z-index: 1;
     background-color: @video-icon-color-tablet;
+    opacity: 1;
   }
+}
+
+.player__volume-scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: @video-icon-color-tablet;
+  opacity: 0.2;
+}
+
+.volume-slider {
+  display: flex;
+  align-items: center;
 }
 
 .player__button {
@@ -161,23 +158,20 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .player__mobile-controls {
-    max-width: 800px;
+  .player__block-controls {
     background-color: transparent;
+
+    &::after {
+      bottom: 39px;
+      left: 25%;
+    }
   }
 
   .player__volume-scale {
-    &::after {
-      left: 0;
-      right: 40px;
-      bottom: 20px;
-      width: 74%;
-    }
-
-    &::before {
-      bottom: 16px;
-      left: 33%;
-    }
+    width: 75%;
+    max-width: 540px;
+    margin-left: 50px;
+    margin-bottom: 45px;
   }
 
   .player__icon {
@@ -202,13 +196,6 @@
     width: 800px;
   }
 
-  .player__volume-scale {
-    &::after {
-      width: 80%;
-      max-width: 540px;
-    }
-  }
-
   .player__button {
     &--replay {
       margin-left: 35px;
@@ -217,5 +204,16 @@
     &--fullscreen {
       margin-right: 42px;
     }
+  }
+
+  .player__block-controls {
+    &::after {
+      left: 35%;
+    }
+  }
+
+  .player__volume-scale {
+    width: 540px;
+    margin-left: 0;
   }
 }

@@ -11,8 +11,8 @@
 <div class="wrapper">
   <header class="page-header container container--indent">
     <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span
-        class="visually-hidden">Закрыть меню</span>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
         <svg class="main-nav__close-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22.199" height="22.199">
           <use xlink:href="img/sprite.svg#close-icon"></use>
         </svg>
@@ -21,8 +21,8 @@
         <li class="site-list__item site-list__item--index site-list__item--active"><a href="index.html">Главная</a></li>
         <li class="site-list__item site-list__item--photo"><a href="photo.html">Фото и видео</a></li>
         <li class="site-list__item site-list__item--form"><a href="form.html">Форма отзыва</a></li>
-        <li class="site-list__item site-list__item--academy"><a href="https://htmlacademy.ru/intensive/adaptive">HTML
-          Academy</a></li>
+        <li class="site-list__item site-list__item--academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         <li class="site-list__item site-list__item--logo">
           <a class="site-list__link" href="index.html">
             <picture>
@@ -34,8 +34,8 @@
           </a>
         </li>
       </ul>
-      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span
-        class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
         <svg class="main-nav__open-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982">
           <use xlink:href="img/sprite.svg#open-icon"></use>
         </svg>
@@ -43,10 +43,13 @@
     </nav>
     <div class="page-header__welcome">
       <span class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</span>
+      <svg class="page-header__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="459.754" height="79.805">
+        <use xlink:href="img/sprite.svg#sedona-icon"></use>
+      </svg>
     </div>
   </header>
   <main class="page-main container container--indent">
-    <div class="page-main__wrapper page-main__wrapper--photo">
+    <div class="page-main__wrapper page-main__wrapper--inner">
       <h2 class="page-main__title page-main__title">Фото и видео</h2>
       <p class="page-main__paragraph page-main__paragraph">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
@@ -72,10 +75,12 @@
             <h5 class="gallery__title">Неродные просторы</h5>
             <p class="gallery__copyright">Автор фото: Борис</p>
           </div>
-          <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
-            <use xlink:href="img/sprite.svg#like-icon"></use>
-          </svg>
-          <b class="gallery__likes">1350</b>
+          <div class="gallery__icon-likes">
+            <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+              <use xlink:href="img/sprite.svg#like-icon"></use>
+            </svg>
+            <b class="gallery__likes">1350</b>
+          </div>
         </div>
       </div>
       <div class="gallery__big-block">
@@ -98,10 +103,12 @@
               <h5 class="gallery__title">Местная растительность</h5>
               <p class="gallery__copyright">Автор фото: Сергей</p>
             </div>
-            <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
-              <use xlink:href="img/sprite.svg#like-icon"></use>
-            </svg>
-            <b class="gallery__likes">143</b>
+            <div class="gallery__icon-likes">
+              <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <b class="gallery__likes">143</b>
+            </div>
           </div>
         </div>
         <div class="gallery__block">
@@ -123,10 +130,12 @@
               <h5 class="gallery__title">Дорога на север</h5>
               <p class="gallery__copyright">Автор фото: Петр</p>
             </div>
-            <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
-              <use xlink:href="img/sprite.svg#like-icon"></use>
-            </svg>
-            <b class="gallery__likes">96</b>
+            <div class="gallery__icon-likes">
+              <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <b class="gallery__likes">96</b>
+            </div>
           </div>
         </div>
         <div class="gallery__block">
@@ -148,10 +157,12 @@
               <h5 class="gallery__title">Мост Дьявола</h5>
               <p class="gallery__copyright">Автор фото: Антон</p>
             </div>
-            <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
-              <use xlink:href="img/sprite.svg#like-icon"></use>
-            </svg>
-            <b class="gallery__likes">254</b>
+            <div class="gallery__icon-likes">
+              <svg class="gallery__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <b class="gallery__likes">254</b>
+            </div>
           </div>
         </div>
       </div>

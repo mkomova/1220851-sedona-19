@@ -315,6 +315,7 @@
   .inquirer {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 6.25%;
   }
 
   .inquirer__form {
@@ -326,15 +327,25 @@
 
   .inquirer__profile {
     margin: 0;
+    padding: 0;
     border: none;
 
     &--introduce {
       order: 2;
       display: flex;
       max-width: 50%;
+      border-left: 1px solid @input-color;
 
       .inquirer__title {
         display: flex;
+        margin-top: 0;
+        margin-left: 57px;
+        margin-bottom: 60px;
+      }
+
+      .inquirer__field-wrapper {
+        margin-left: 58px;
+        margin-right: 12px;
       }
     }
 
@@ -342,11 +353,42 @@
       order: 3;
       flex-grow: 1;
       width: 100%;
+      margin-top: 50px;
+
+      .inquirer__title {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 140px;
+          top: 12px;
+          left: 0;
+          background-color: @input-color;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 140px;
+          top: 12px;
+          right: 0;
+          background-color: @input-color;
+        }
+      }
     }
 
     &--impression {
       order: 1;
       max-width: 50%;
+      margin-left: 11px;
+
+      .inquirer__title {
+        margin-top: 0;
+        margin-bottom: 56px;
+      }
     }
 
     &--attractions {
@@ -369,6 +411,15 @@
         margin-top: 0;
       }
     }
+  }
+
+  .inquirer__button-wrapper {
+    order: 6;
+  }
+
+  .inquirer__button {
+    margin-bottom: 52px;
+    margin-left: 37px;
   }
 
   .inquirer__title {

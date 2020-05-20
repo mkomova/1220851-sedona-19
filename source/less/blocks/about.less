@@ -148,7 +148,7 @@
 @media (min-width: @desktop-width) {
   .about {
     max-width: 1200px;
-    margin: 67px 0;
+    margin: 48px 0 67px;
   }
 
   .about__item {
@@ -157,16 +157,46 @@
 
     &--housing {
       width: 252px;
+
+      .about__paragraph {
+        margin-left: -6px;
+      }
     }
 
     &--souvenirs {
       width: 214px;
-      margin-right: 22px;
+
+      .about__icon {
+        top: 10px;
+        left: -19px;
+      }
+
+      .about__title {
+        margin-right: 37px;
+      }
+
+      .about__paragraph {
+        width: 214px;
+        margin-top: 20px;
+        margin-left: -2px;
+      }
     }
 
     &--food {
       width: 283px;
-      margin-right: 19px;
+
+      .about__title {
+        margin-right: 38px;
+      }
+
+      .about__icon {
+        left: -19px;
+      }
+
+      .about__paragraph {
+        margin-left: -21px;
+        margin-right: 20px;
+      }
     }
   }
 }

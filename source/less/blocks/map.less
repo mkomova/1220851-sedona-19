@@ -1,10 +1,18 @@
 .map {
+  position: relative;
   text-align: center;
 }
 
 .map__img {
+  position: relative;
   width: 100%;
-  margin-bottom: 10px;
+}
+
+.map__icon {
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,6 +21,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .map__link {
+    width: 100%;
+  }
+
+  .map__icon {
+    top: 46%;
+    left: 48%;
   }
 }
 
@@ -21,5 +40,10 @@
     width: 1200px;
     height: 350px;
     margin-bottom: 0;
+  }
+
+  .map__icon {
+    top: 45%;
+    left: 49%;
   }
 }

@@ -1,0 +1,265 @@
+.player {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding-bottom: 46px;
+  background-color: @bg-white;
+}
+
+.player__wrapper {
+  max-width: 90%;
+  margin: 9px auto 20px;
+  padding: 0 8%;
+}
+
+.player__title {
+  .bold-title;
+  text-align: center;
+}
+
+.player__paragraph {
+  margin-top: 27px;
+  .paragraph;
+  color: @font-grey;
+  text-align: center;
+}
+
+.player__video-preview {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.player__preview {
+  display: flex;
+  width: 100%;
+}
+
+.player__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  max-width: 569px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: @input-color;
+}
+
+.player__block-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  max-width: 569px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: -45px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 129px;
+    left: 24%;
+    right: 0;
+    width: 11px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: @video-icon-color-tablet;
+    opacity: 1;
+  }
+}
+
+.player__volume-scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: @video-icon-color-tablet;
+  opacity: 0.2;
+}
+
+.volume-slider {
+  display: flex;
+  align-items: center;
+}
+
+.player__button {
+  display: flex;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--replay {
+    margin-left: 24px;
+
+    .player__icon {
+      width: 16px;
+    }
+  }
+
+  &--subtitles {
+    margin-left: auto;
+
+    .player__icon {
+      width: 32px;
+    }
+  }
+
+  &--fullscreen {
+    margin-left: 30px;
+    margin-right: 22px;
+
+    .player__icon {
+      width: 20px;
+    }
+  }
+}
+
+.player__icon {
+  display: flex;
+  height: 20px;
+  z-index: 1;
+  fill: @video-icon-color;
+
+  &:hover {
+    fill: @video-icon-color-hover;
+  }
+
+  &:active {
+    fill: @video-icon-color-active;
+    fill-opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .player {
+    margin-top: 17px;
+    margin-bottom: 38px;
+    padding: 0 7.8%;
+  }
+
+  .player__wrapper {
+    margin-bottom: 60px;
+  }
+
+  .player__title {
+    margin-bottom: 30px;
+    .tablet-title;
+  }
+
+  .player__controls {
+    width: 100%;
+    min-width: 648px;
+    max-width: 800px;
+    height: 93px;
+    margin-top: -93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__block-controls {
+    background-color: transparent;
+
+    &::after {
+      bottom: 78px;
+      left: 34.5%;
+      width: 9px;
+      height: 9px;
+    }
+  }
+
+  .player__volume-scale {
+    width: 75%;
+    max-width: 540px;
+    margin-left: 50px;
+    margin-bottom: 45px;
+  }
+
+  .player__button {
+    &--replay {
+      margin-left: 34px;
+    }
+
+    &--fullscreen {
+      margin-left: 30px;
+      margin-right: 40px;
+    }
+  }
+
+  .player__icon {
+    fill: @video-icon-color-tablet;
+
+    &:hover {
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+
+  .player__preview {
+    max-width: 800px;
+    height: 499px;
+  }
+
+  .player__video-preview {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player {
+    margin-top: 22px;
+    margin-bottom: 84px;
+  }
+
+  .player__wrapper {
+    width: 415px;
+    margin-bottom: 57px;
+  }
+
+  .player__preview {
+    width: 800px;
+  }
+
+  .player__button {
+    &--replay {
+      margin-left: 35px;
+    }
+
+    &--fullscreen {
+      margin-right: 42px;
+    }
+  }
+
+  .player__block-controls {
+    &::after {
+      left: 33.7%;
+      bottom: 124px;
+    }
+  }
+
+  .player__volume-scale {
+    width: 540px;
+    margin-left: 0;
+  }
+}

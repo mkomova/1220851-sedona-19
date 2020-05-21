@@ -1,10 +1,11 @@
 .booking {
   text-align: center;
   box-sizing: border-box;
-  margin: 28px 20px;
+  margin: 7px 20px 0;
 }
 
 .booking__title {
+  margin-bottom: 18px;
   .bold-phrase;
 }
 
@@ -16,8 +17,8 @@
 .booking__find-button {
   box-sizing: border-box;
   width: 100%;
-  margin: 34px auto 49px;
-  padding: 15px 0;
+  margin: 36px auto 49px;
+  padding: 15px 0 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,22 +27,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 26px 167px 47px;
+    margin: 26px 167px 46px;
   }
 
   .booking__title {
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 26px;
     font-weight: bold;
   }
 
   .booking__find-button {
-    margin: 43px auto 13px;
+    margin: 29px auto 13px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .booking {
+    margin-bottom: 53px;
+  }
+
+  .booking__title {
+    margin-bottom: 17px;
+  }
+
   .booking__paragraph {
     width: 434px;
+  }
+
+  .booking__find-button {
+    margin-top: 34px;
+    max-width: 458px;
   }
 }

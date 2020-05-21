@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 55px;
+    min-height: 56px;
     color: @font-white;
     background-color: @bg-blue;
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
@@ -23,7 +23,8 @@
   }
 
   .site-list__link {
-    background-color: @bg-white;
+    background-color: transparent;
+    height: 56px;
 
     &:hover,
     &:active {
@@ -34,7 +35,7 @@
 
 .site-list__logo {
   position: relative;
-  top: 22px;
+  top: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,9 +44,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 2px;
       color: @font-black;
       font-weight: bold;
-      background-color: @bg-white;
+      background-color: transparent;
       box-shadow: none;
 
       &:hover {
@@ -64,10 +66,12 @@
     }
 
     &--index {
+      margin-left: 21px;
       order: 1;
     }
 
     &--photo {
+      margin-left: 25px;
       order: 2;
     }
 
@@ -85,7 +89,7 @@
   }
 
   .site-list__logo {
-    top: 0;
+    top: 1px;
   }
 }
 
@@ -93,5 +97,34 @@
   .site-list__logo {
     width: 188px;
     height: 96px;
+    top: 0;
+  }
+
+  .site-list__item {
+    a {
+      margin-top: 0;
+    }
+
+    &--index {
+      margin-left: 41px;
+    }
+
+    &--photo {
+      margin-left: 64px;
+    }
+
+    &--form {
+      margin-right: 41px;
+    }
+
+    &--academy {
+      margin-right: 22px;
+    }
+  }
+
+  .page-header__icon {
+    &--index {
+      margin-top: -14px;
+    }
   }
 }

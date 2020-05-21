@@ -7,14 +7,14 @@
   &--bridge {
     .reasons__wrapper {
       &--main {
-        padding: 15px 25px 27px;
+        margin-top: 0;
+        padding: 15px 25px 25px;
       }
     }
   }
 
   &--secondary {
     .reasons__wrapper {
-      padding: 3px 41px;
       background-color: @bg-grey;
     }
 
@@ -24,37 +24,58 @@
   }
 }
 
+.reasons__triangle {
+  background-image: url("../img/bg-triangle.svg");
+  width: 100%;
+  height: 37px;
+  margin-top: -8px;
+  z-index: 1;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 .reasons__wrapper {
   box-sizing: border-box;
 
   &--main {
-    padding: 31px 25px 27px;
+    margin-top: -37px;
+    padding: 53px 25px 27px;
     color: @font-white;
     background-color: @bg-blue;
   }
 
+  &--area {
+    padding: 2px 37px 8px;
+  }
+
+  &--road {
+    padding: 9px 37px 8px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
   &--tourists {
-    padding: 3px 31px 15px;
+    padding: 9px 37px 12px;
   }
 }
 
 .reasons__title {
   margin-bottom: 0;
   .bold-title;
-
-  &--advantages {
-    margin-top: 35px;
-  }
 }
 
 .reasons__paragraph {
-  margin-top: 9px;
+  margin-top: 10px;
   .small-paragraph;
 }
 
+.reasons__picture {
+  height: 260px;
+}
+
 .reasons__img {
-  width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,11 +84,17 @@
 
     &--secondary {
       display: flex;
-      max-width: 900px;
+      box-sizing: border-box;
       margin: auto;
+      width: 100%;
 
-      .reasons__wrapper {
-        padding: 29px 55px;
+      .reasons__title {
+        max-width: 256px;
+        margin-top: -6px;
+      }
+
+      .reasons__paragraph {
+        max-width: 256px;
       }
     }
 
@@ -76,36 +103,85 @@
 
       .reasons__title {
         box-sizing: border-box;
-        margin: 15px 12px 5px;
+        margin: 12px 12px 2px;
+      }
+
+      .reasons__paragraph {
+        margin-top: 7px;
       }
 
       .reasons__wrapper {
         &--main {
+          height: 256px;
           padding: 0 40px;
         }
       }
     }
   }
 
+  .reasons__triangle {
+    display: none;
+  }
+
   .reasons__wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     &--main {
       display: flex;
       align-items: center;
       justify-content: center;
+      min-width: 256px;
       width: 33%;
+      margin: 0;
       padding: 0 40px;
+
+      .reasons__paragraph {
+        padding: 0 8px;
+      }
+    }
+
+    &--area {
+      padding: 50px 48px 30px 49px;
+    }
+
+    &--road {
+      padding: 50px 53px 30px 51px;
+      border: none;
+
+      .reasons__title {
+        margin-left: 9px;
+      }
+
+      .reasons__paragraph {
+        margin-left: 12px;
+        margin-top: 9px;
+      }
+    }
+
+    &--tourists {
+      padding: 50px 55px 30px 56px;
+      border: none;
     }
   }
 
+  .reasons__paragraph {
+    margin-top: 9px;
+  }
+
+  .reasons__picture {
+    width: 100%;
+    height: 256px;
+  }
+
   .reasons__img {
-    display: flex;
+    width: 100%;
+    height: 256px;
   }
 
   .reasons__title {
-    margin-top: 15px;
+    margin-top: 17px;
     .bold-phrase;
   }
 }
@@ -120,40 +196,63 @@
       }
 
       .reasons__title {
-        box-sizing: border-box;
-        margin: 0 70px 10px;
+        padding: 0 70px;
       }
     }
 
     &--bridge {
       .reasons__title {
-        margin: 15px 35px 5px;
+        margin: 10px 35px 3px;
       }
 
       .reasons__wrapper {
         &--main {
-          padding: 0 90px;
+          padding: 0 85px;
         }
       }
     }
   }
 
   .reasons__wrapper {
+    padding-bottom: 50px;
+
     &--main {
       box-sizing: border-box;
       width: 400px;
-      height: 256px;
+      min-height: 256px;
       padding: 0 60px;
+
+      .reasons__paragraph {
+        max-width: 265px;
+      }
     }
+
+    &--road {
+      .reasons__paragraph {
+        &--number {
+          margin-left: 25px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .reasons__paragraph {
+    &--number {
+      margin-left: 22px;
+      margin-top: 12px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .reasons__picture {
+    width: 800px;
+    height: 256px;
   }
 
   .reasons__img {
     width: 800px;
     height: 256px;
     margin: 0;
-  }
-
-  .reasons__title {
-    margin: 10px 40px;
   }
 }

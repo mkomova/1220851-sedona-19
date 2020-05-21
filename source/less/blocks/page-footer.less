@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: @bg-white;
-  padding-top: 30px;
+  padding-top: 9px;
   padding-bottom: 30px;
 }
 
@@ -22,7 +22,8 @@
 
 .page-footer__academy {
   display: flex;
-  margin-left: 10px;
+  margin-top: -3px;
+  margin-left: 13px;
 
   &:hover {
     fill: @bg-blue;
@@ -50,5 +51,12 @@
 
   .page-footer__copyright {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page__footer {
+    padding-top: 6px;
+    margin-top: 4px;
   }
 }

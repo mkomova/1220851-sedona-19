@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -43,14 +43,14 @@ a {
   margin: 0 auto;
   padding: 0 6.25%;
 
-  &--index {
+  &--indent {
     padding: 0;
   }
 
   @media (min-width: @tablet-width) {
     padding: 0 7.8%;
 
-    &--index {
+    &--indent {
       padding: 0;
     }
   }
@@ -58,8 +58,7 @@ a {
   @media (min-width: @desktop-width) {
     padding: 0 10%;
 
-    &--index,
-    &--photo {
+    &--indent {
       padding: 0;
     }
   }
@@ -72,7 +71,7 @@ width: 320px;
 margin: 0 auto;
 padding: 0 20px;
 
-&--index {
+&--indent {
 padding: 0;
 }
 
@@ -80,7 +79,7 @@ padding: 0;
 width: 768px;
 padding: 0 60px;
 
-&--index {
+&--indent {
 padding: 0;
 }
 }
@@ -93,7 +92,7 @@ padding: 0 120px;
 padding: 0;
 }
 
-&--index {
+&--indent {
 padding: 0;
 }
 }

@@ -7,9 +7,22 @@
   text-transform: uppercase;
   background-color: @bg-blue;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @bg-hover-blue;
+  }
+
+  &:active {
+    background-color: @bg-active-blue;
+  }
+
+  &:disabled {
+    background-color: @bg-disabled;
+  }
 
   &--popup {
-    padding: 22px 0;
+    padding: 14px 0 15px;
     .bold-title;
   }
 }

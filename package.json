@@ -46,7 +46,6 @@
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0",
-    "svg4everybody": "^2.1.9"
+    "del": "^5.1.0"
   }
 }

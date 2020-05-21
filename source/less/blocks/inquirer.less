@@ -616,12 +616,15 @@
   .inquirer__profile {
     &--introduce {
       max-width: 520px;
-      margin-left: 78px;
-      padding-left: 20px;
+
+      .inquirer__field-wrapper {
+        margin-left: 45px;
+      }
     }
 
     &--contacts {
       margin-top: 48px;
+      margin-bottom: 9px;
 
       .inquirer__field-wrapper {
         display: flex;
@@ -631,6 +634,8 @@
 
       .inquirer__input {
         width: 315px;
+        margin-top: 4px;
+        padding-left: 18px;
       }
 
       .inquirer__title {
@@ -657,14 +662,39 @@
 
       .inquirer__item {
         margin-bottom: 0;
+
+        &--park {
+          .inquirer__control-label {
+            margin-left: 43px;
+
+            &::before {
+              left: -39px;
+            }
+          }
+
+          .inquirer__icon-check {
+            left: -20px;
+          }
+        }
+
+        &--rock {
+          .inquirer__control-label {
+            margin-left: 19px;
+
+            &::before {
+              left: -39px;
+            }
+          }
+
+          .inquirer__icon-check {
+            left: -20px;
+          }
+        }
       }
     }
 
     &--impression {
-      margin-left: 28px;
-
       .inquirer__title {
-        margin-left: 48px;
         margin-bottom: 54px;
       }
 
@@ -684,6 +714,10 @@
     }
   }
 
+  .inquirer__button-wrapper {
+    margin-bottom: 4px;
+  }
+
   .inquirer__button {
     margin-left: 50px;
   }
@@ -693,6 +727,7 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 65px;
+    margin-right: 0;
     margin-bottom: 38px;
   }
 
@@ -701,11 +736,11 @@
   }
 
   .inquirer__radio-buttons {
+    margin-right: 146px;
     padding: 0;
   }
 
   .inquirer__checkbox-section {
-    justify-content: space-around;
     max-width: 100%;
   }
 
@@ -723,34 +758,34 @@
 
     &--phone {
       margin-top: 20px;
-      margin-left: 7px;
+      margin-left: -5px;
       margin-right: 18px;
     }
 
     &--phone::after {
       top: 23px;
-      right: 594px;
+      right: 579px;
     }
 
     &--phone::before {
-      top: 3px;
-      right: 574px;
+      top: 4px;
+      right: 559px;
     }
 
     &--mail {
       margin-top: 20px;
-      margin-left: 42px;
+      margin-left: 70px;
       margin-right: 16px;
     }
 
     &--mail::after {
       top: 25px;
-      right: 35px;
+      right: 21px;
     }
 
     &--mail::before {
-      top: 3px;
-      right: 14px;
+      top: 4px;
+      right: 0;
     }
   }
 }

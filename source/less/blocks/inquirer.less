@@ -186,7 +186,7 @@
 
 .inquirer__input::placeholder {
   .bold-title;
-  color: #000000;
+  color: @font-black;
   text-transform: none;
 }
 
@@ -201,6 +201,7 @@
   padding: 4px 21px 10px;
   .bold-title;
   font-family: "PT Sans", "Arial", sans-serif;
+  color: @font-black;
   background-color: @input-color;
   border: 5px solid transparent;
   outline: none;
@@ -280,7 +281,7 @@
 }
 
 .inquirer__textarea::placeholder {
-  color: #000000;
+  color: @font-black;
   text-transform: none;
 }
 
@@ -615,10 +616,16 @@
 
   .inquirer__profile {
     &--introduce {
-      max-width: 520px;
+      min-width: 479px;
+      margin-left: auto;
 
       .inquirer__field-wrapper {
-        margin-left: 45px;
+        margin-left: 80px;
+      }
+
+      .inquirer__title {
+        margin-left: 78px;
+        margin-bottom: 57px;
       }
     }
 
@@ -694,6 +701,8 @@
     }
 
     &--impression {
+      margin-left: 28px;
+
       .inquirer__title {
         margin-bottom: 54px;
       }

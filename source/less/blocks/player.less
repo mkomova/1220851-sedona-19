@@ -243,23 +243,36 @@
 
   .player__button {
     &--replay {
-      margin-left: 35px;
+      margin-left: 0;
+    }
+
+    &--subtitles {
+      margin-left: 625px;
     }
 
     &--fullscreen {
-      margin-right: 42px;
+      margin-right: 12px;
     }
   }
 
   .player__block-controls {
+    max-width: 100%;
+
     &::after {
       left: 33.7%;
       bottom: 124px;
+      z-index: 2;
     }
+  }
+
+  .player__controls {
+    z-index: 1;
   }
 
   .player__volume-scale {
     width: 540px;
+    margin-right: 80px;
     margin-left: 0;
+    z-index: 2;
   }
 }

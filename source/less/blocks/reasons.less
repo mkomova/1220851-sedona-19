@@ -46,17 +46,17 @@
   }
 
   &--area {
-    padding: 2px 37px 8px;
+    padding: 2px 37px 14px;
   }
 
   &--road {
-    padding: 9px 37px 8px;
+    padding: 0 37px 14px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
   }
 
   &--tourists {
-    padding: 9px 37px 12px;
+    padding: 1px 37px 12px;
   }
 }
 
@@ -155,7 +155,7 @@
       }
 
       .reasons__paragraph {
-        margin-left: 12px;
+        margin-left: 8px;
         margin-top: 9px;
       }
     }
@@ -196,7 +196,12 @@
       }
 
       .reasons__title {
+        margin-top: -4px;
         padding: 0 70px;
+      }
+
+      .reasons__paragraph {
+        max-width: 285px;
       }
     }
 
@@ -222,6 +227,11 @@
       min-height: 256px;
       padding: 0 60px;
 
+      .reasons__title {
+        margin-top: 14px;
+        padding: 0 100px;
+      }
+
       .reasons__paragraph {
         max-width: 265px;
       }
@@ -229,30 +239,47 @@
 
     &--road {
       .reasons__paragraph {
+        width: 262px;
+        margin-left: 23px;
+
         &--number {
           margin-left: 25px;
           margin-bottom: 14px;
         }
       }
     }
+
+    &--area {
+      .reasons__paragraph {
+        margin-left: 6px;
+      }
+    }
+
+    &--tourists {
+      .reasons__paragraph {
+        margin-left: 6px;
+      }
+    }
   }
 
   .reasons__paragraph {
     &--number {
-      margin-left: 22px;
-      margin-top: 12px;
+      margin-left: 7px;
+      margin-top: 10px;
       margin-bottom: 11px;
     }
   }
 
   .reasons__picture {
     width: 800px;
-    height: 256px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
   }
 
   .reasons__img {
     width: 800px;
-    height: 256px;
+    height: auto;
     margin: 0;
   }
 }

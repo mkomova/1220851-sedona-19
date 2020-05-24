@@ -57,6 +57,10 @@
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
+
+    .gallery__title {
+      margin-left: 2px;
+    }
   }
 
   .gallery__block {
@@ -94,6 +98,7 @@
   .gallery__title-copyright {
     display: flex;
     flex-direction: column;
+    max-width: 210px;
   }
 
   .gallery__title {
@@ -142,6 +147,10 @@
 
     &--road {
       max-width: 1200px;
+
+      .gallery__title-copyright {
+        max-width: 1000px;
+      }
 
       .gallery__img {
         width: 1200px;

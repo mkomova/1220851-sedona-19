@@ -74,9 +74,9 @@
 
   .about__item {
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 0 49px;
     text-align: center;
-    margin: auto;
+    margin: 0;
 
     &--housing {
       order: 1;
@@ -95,17 +95,18 @@
       }
 
       .about__paragraph {
-        min-width: 155px;
+        width: 160px;
       }
     }
 
     &--souvenirs {
+      margin-left: -5px;
       order: 3;
 
       .about__icon {
         position: relative;
         top: 11px;
-        left: -9px;
+        left: 0;
         fill: @bg-blue;
         width: 64px;
         height: 75px;
@@ -113,21 +114,21 @@
 
       .about__title {
         margin-top: 30px;
-        margin-right: 13px;
       }
 
       .about__paragraph {
-        min-width: 150px;
+        width: 165px;
       }
     }
 
     &--food {
+      margin-left: -5px;
       order: 2;
 
       .about__icon {
         position: relative;
-        top: 15px;
-        left: -10px;
+        top: 16px;
+        left: 0;
         fill: @bg-blue;
         width: 77px;
         height: 68px;
@@ -135,11 +136,10 @@
 
       .about__title {
         margin-top: 36px;
-        margin-right: 18px;
       }
 
       .about__paragraph {
-        min-width: 163px;
+        width: 163px;
       }
     }
   }
@@ -156,46 +156,31 @@
     padding: 0;
 
     &--housing {
-      width: 252px;
+      margin-left: 5px;
 
       .about__paragraph {
-        margin-left: -6px;
+        width: 252px;
       }
     }
 
     &--souvenirs {
-      width: 214px;
+      margin-right: 26px;
 
       .about__icon {
         top: 10px;
-        left: -19px;
-      }
-
-      .about__title {
-        margin-right: 37px;
       }
 
       .about__paragraph {
         width: 214px;
         margin-top: 20px;
-        margin-left: -2px;
       }
     }
 
     &--food {
-      width: 283px;
-
-      .about__title {
-        margin-right: 38px;
-      }
-
-      .about__icon {
-        left: -19px;
-      }
+      margin-right: 20px;
 
       .about__paragraph {
-        margin-left: -21px;
-        margin-right: 20px;
+        width: 283px;
       }
     }
   }

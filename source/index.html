@@ -6,6 +6,10 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2">
 </head>
 <body>
 <div class="wrapper">
@@ -33,7 +37,8 @@
           </a>
         </li>
       </ul>
-      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
         <svg class="main-nav__open-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
@@ -88,7 +93,7 @@
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
           <h4 class="about__title">Еда</h4>
-          <p class="about__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="about__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
       </ul>
       <section class="reasons reasons--bridge">
@@ -126,7 +131,8 @@
     </article>
     <section class="booking">
       <h3 class="booking__title">Заинтересовались?</h3>
-      <p class="booking__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="booking__paragraph">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
       <a class="booking__find-button button" href="https://www.booking.com/index.ru">Найти гостиницу</a>
     </section>
     <section class="map">
@@ -183,5 +189,6 @@
 <script src="js/main.js"></script>
 <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody();</script>
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>
